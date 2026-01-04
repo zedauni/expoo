@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-background: 242 242 242; /* #F2F2F2 - regularGrey */
+    --color-foreground: 0 0 0; /* #000000 - black */
+    --color-surface: 255 255 255; /* #FFFFFF - white */
+    --color-primary: 154 65 92; /* #9A415C - primary */
+    --color-grey: 148 148 148; /* #949494 - grey */
+  }
+
+  .dark {
+    --color-background: 23 23 23; /* charcoal-like */
+    --color-foreground: 214 214 214; /* extraLightRegularGrey-like */
+    --color-surface: 38 38 38; /* dark grey surface */
+    --color-primary: 218 139 163; /* lightPrimary */
+    --color-grey: 163 163 163; /* grey */
+  }
+}

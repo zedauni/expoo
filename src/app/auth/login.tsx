@@ -100,7 +100,7 @@ const LoginScreen = () => {
   return (
     <View className="flex-1">
       <MyStatusBar />
-      <View className="flex-1 bg-white">
+      <View className="bg-surface flex-1">
         <ScreenBackground />
 
         <Text className="mt-[60px] text-center font-inter text-[25px] font-bold text-white">
@@ -110,7 +110,7 @@ const LoginScreen = () => {
         <KeyboardAvoidingView
           behavior={Platform.OS === 'ios' ? 'height' : undefined}
           keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 50}
-          className="z-10 mx-5 mb-5 mt-8 rounded-[50px] bg-white shadow-md"
+          className="bg-surface z-10 mx-5 mb-5 mt-8 rounded-[50px] shadow-md"
           style={{ maxHeight: height / 1.8, elevation: 6 }}
         >
           <View className="overflow-hidden rounded-[50px]">
@@ -123,7 +123,7 @@ const LoginScreen = () => {
                 className="my-[30px] size-[140px] self-center"
               />
               <View className="items-center justify-center">
-                <Text className="font-inter text-lg font-bold text-black">
+                <Text className="text-foreground font-inter text-lg font-bold">
                   {t('loginScreen.welcomeBack')}
                 </Text>
                 <Text className="text-grey font-inter text-sm font-semibold">
@@ -145,20 +145,20 @@ const LoginScreen = () => {
                   selectionColor: colors.primary,
                 }}
                 modalCountryItemCountryNameStyle={{
-                  fontFamily: 'NunitoSans_SemiBold', // Use raw family name if possible, or omit
+                  fontFamily: 'NunitoSans_SemiBold',
                   fontSize: 16,
-                  color: colors.black,
+                  color: colors.foreground,
                 }}
                 closeButtonStyle={{
                   fontFamily: 'NunitoSans_SemiBold',
                   fontSize: 16,
-                  color: colors.black,
+                  color: colors.foreground,
                   backgroundColor: colors.primary,
                 }}
                 dialCodeTextStyle={{
                   fontFamily: 'NunitoSans_SemiBold',
                   fontSize: 16,
-                  color: colors.black,
+                  color: colors.foreground,
                   paddingRight: 12,
                 }}
                 containerStyle={{
@@ -169,9 +169,9 @@ const LoginScreen = () => {
                   marginHorizontal: 20,
                   marginVertical: 40,
                   borderRadius: 10,
-                  backgroundColor: colors.white,
+                  backgroundColor: colors.surface,
                   elevation: 6,
-                  shadowColor: colors.black,
+                  shadowColor: colors.foreground,
                   shadowOffset: { width: 0, height: 2 },
                   shadowOpacity: 0.15,
                 }}
@@ -179,7 +179,7 @@ const LoginScreen = () => {
                   padding: 0,
                   fontFamily: 'NunitoSans_SemiBold',
                   fontSize: 16,
-                  color: colors.black,
+                  color: colors.foreground,
                   textAlign: 'left',
                   paddingHorizontal: 12,
                   borderLeftWidth: 2,

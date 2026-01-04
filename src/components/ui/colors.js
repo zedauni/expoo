@@ -1,12 +1,17 @@
 module.exports = {
+  // Semantic dynamic colors
+  background: 'rgb(var(--color-background))',
+  foreground: 'rgb(var(--color-foreground))',
+  surface: 'rgb(var(--color-surface))',
+  // Static legacy colors
   white: '#FFFFFF',
   charcoal: '#36454F', // Added for compatibility
   black: '#000000',
-  primary: '#9A415C',
+  primary: 'rgb(var(--color-primary))',
   lightPrimary: '#DA8BA3',
   transparent: 'transparent',
   transparentBlack: '#00000080',
-  grey: '#949494',
+  grey: 'rgb(var(--color-grey))',
   darkGrey: '#333333',
   lightGrey: '#D9D9D9',
   regularGrey: '#F2F2F2',

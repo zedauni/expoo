@@ -101,7 +101,7 @@ const OnboardingScreen = () => {
           />
         </View>
         <View className="mx-5 flex-[2] items-center justify-center">
-          <Text className="font-inter text-xl font-bold text-black">
+          <Text className="text-foreground font-inter text-xl font-bold">
             {item.title}
           </Text>
           <Text className="text-grey mt-2.5 text-center font-inter text-sm font-semibold">
@@ -187,7 +187,7 @@ const OnboardingScreen = () => {
   return (
     <View className="flex-1">
       <MyStatusBar />
-      <View className="flex-1 bg-white">
+      <View className="bg-surface flex-1">
         <FlatList
           ref={ref}
           horizontal

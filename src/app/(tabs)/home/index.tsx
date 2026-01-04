@@ -147,7 +147,7 @@ const HomeScreen = () => {
         activeOpacity={0.8}
         disabled={index === 3 || index === 4}
         onPress={() => servicesClickHandler(index)}
-        className="mx-2.5 mb-5 flex-1 items-center justify-center rounded-[10px] bg-white p-[3px] py-5 shadow-md"
+        className="bg-surface mx-2.5 mb-5 flex-1 items-center justify-center rounded-[10px] p-[3px] py-5 shadow-md"
         style={{ elevation: 6 }}
       >
         <Image source={item.image} className="size-[30px]" />
@@ -216,7 +216,7 @@ const HomeScreen = () => {
           return (
             <View
               key={item.key}
-              className="mx-5 mb-5 flex-row items-center justify-between rounded-[10px] bg-white px-4 py-3 shadow-md"
+              className="bg-surface mx-5 mb-5 flex-row items-center justify-between rounded-[10px] px-4 py-3 shadow-md"
               style={{ elevation: 6 }}
             >
               <View className="flex-1 flex-row items-center">
@@ -230,7 +230,7 @@ const HomeScreen = () => {
                 <View className="flex-1 items-start px-4">
                   <Text
                     numberOfLines={1}
-                    className="font-nunito text-[15px] font-bold text-black"
+                    className="text-foreground font-nunito text-[15px] font-bold"
                   >
                     {item.name}
                   </Text>
@@ -261,7 +261,7 @@ const HomeScreen = () => {
   return (
     <View className="flex-1">
       <MyStatusBar />
-      <View className="bg-regularGrey flex-1">
+      <View className="bg-background flex-1">
         <Image
           source={images.homeImage} // Make sure this exists in images.ts
           style={{ width: width, height: 220 }}
@@ -310,7 +310,7 @@ const HomeScreen = () => {
           showsVerticalScrollIndicator={false}
           columnWrapperStyle={{ paddingHorizontal: 10 }}
           ListHeaderComponent={() => (
-            <Text className="mx-5 mb-2.5 mt-4 text-left font-nunito text-lg font-bold text-black">
+            <Text className="text-foreground mx-5 mb-2.5 mt-4 text-left font-nunito text-lg font-bold">
               {t('homeScreen.services')}
             </Text>
           )}
