@@ -12,6 +12,7 @@ import {
   View,
 } from 'react-native';
 import { BottomSheet } from 'react-native-btr';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import MyStatusBar from '@/components/my-status-bar';
 import SuccessDepositModal from '@/components/success-deposit-modal';
@@ -117,6 +118,7 @@ const AddDepositScreen = () => {
   ];
   const [selectedAccount, setSelectedAccount] = useState<string>();
 
+  const insets = useSafeAreaInsets();
   return (
     <View className="bg-regularGrey flex-1">
       <MyStatusBar />
@@ -149,6 +151,7 @@ const AddDepositScreen = () => {
         columnWrapperStyle={{
           paddingHorizontal: 20,
         }}
+        contentContainerStyle={{ paddingBottom: 20 }}
         ListHeaderComponent={
           <Text
             className="mx-5 mb-3 mt-5 font-nunito text-[17px] font-bold text-black"
@@ -286,7 +289,7 @@ const AddDepositScreen = () => {
       <TouchableOpacity
         onPress={() => setSuccessDepositModal(true)}
         className="bg-primary m-5 items-center justify-center rounded-[10px] p-3 shadow-md"
-        style={{ elevation: 5 }}
+        style={{ elevation: 5, marginBottom: insets.bottom + 20 }}
       >
         <Text className="font-nunito text-lg font-bold text-white">
           {tr('depositNow')}

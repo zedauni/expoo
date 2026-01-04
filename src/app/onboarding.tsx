@@ -17,6 +17,7 @@ import {
   View,
 } from 'react-native';
 import { showMessage } from 'react-native-flash-message';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
@@ -25,6 +26,7 @@ import images from '@/constants/images';
 const { width } = Dimensions.get('window');
 
 const OnboardingScreen = () => {
+  const insets = useSafeAreaInsets();
   const router = useRouter();
   const { t } = useTranslation();
   const [exitApp, setExitApp] = useState(0);
@@ -102,7 +104,7 @@ const OnboardingScreen = () => {
           <Text className="font-inter text-xl font-bold text-black">
             {item.title}
           </Text>
-          <Text className="mt-2.5 text-center font-inter text-sm font-semibold text-grey">
+          <Text className="text-grey mt-2.5 text-center font-inter text-sm font-semibold">
             {item.subtitle}
           </Text>
         </View>
@@ -132,7 +134,10 @@ const OnboardingScreen = () => {
 
   const ListFooterComponent = () => {
     return (
-      <View className="mx-5 mb-4 mt-12 flex-row items-center justify-between">
+      <View
+        className="mx-5 mb-4 mt-12 flex-row items-center justify-between"
+        style={{ marginBottom: insets.bottom + 16 }}
+      >
         <TouchableOpacity
           disabled={currentSlideIndex === onboardingSlides.length - 1}
           onPress={() => router.push('/auth/login')}
@@ -154,7 +159,7 @@ const OnboardingScreen = () => {
               key={index}
               className={`mx-1 size-2.5 rounded-full ${
                 currentSlideIndex === index
-                  ? 'h-2 w-9 rounded-[5px] bg-primary'
+                  ? 'bg-primary h-2 w-9 rounded-[5px]'
                   : 'bg-lightGrey'
               }`}
             />
@@ -169,9 +174,9 @@ const OnboardingScreen = () => {
               goToNextSlide();
             }
           }}
-          className="size-14 items-center justify-center rounded-full border-2 border-dotted border-lightPrimary"
+          className="border-lightPrimary size-14 items-center justify-center rounded-full border-2 border-dotted"
         >
-          <View className="size-[46px] items-center justify-center rounded-full bg-primary">
+          <View className="bg-primary size-[46px] items-center justify-center rounded-full">
             <Ionicons name="arrow-forward" size={25} color={colors.white} />
           </View>
         </TouchableOpacity>

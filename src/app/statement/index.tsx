@@ -17,6 +17,7 @@ import {
 } from 'react-native';
 import { BottomSheet } from 'react-native-btr';
 import DashedLine from 'react-native-dashed-line';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import BankAccountName from '@/components/bank-account-name';
 import MyStatusBar from '@/components/my-status-bar';
@@ -163,6 +164,7 @@ const StatementScreen = () => {
     setEndDateCalendarModal(false);
   };
 
+  const insets = useSafeAreaInsets();
   return (
     <View className="bg-regularGrey flex-1">
       <MyStatusBar />
@@ -191,7 +193,10 @@ const StatementScreen = () => {
         <Feather name="download" size={22} color={colors.primary} />
       </View>
 
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 20 }}
+      >
         <View
           className="bg-extraLightPink m-5 flex-row items-center rounded-lg px-4 py-2"
           style={{ flexDirection: isRtl ? 'row-reverse' : 'row' }}

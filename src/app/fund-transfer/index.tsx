@@ -12,6 +12,7 @@ import {
   View,
 } from 'react-native';
 import { BottomSheet } from 'react-native-btr';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import MyStatusBar from '@/components/my-status-bar';
 import SelectAccountNo from '@/components/select-account-no';
@@ -979,6 +980,7 @@ const FundTransferScreen = () => {
     }
   };
 
+  const insets = useSafeAreaInsets();
   return (
     <View className="flex-1">
       <MyStatusBar />
@@ -1015,7 +1017,7 @@ const FundTransferScreen = () => {
         <TouchableOpacity
           onPress={() => router.push('/successfully')}
           className="bg-primary m-5 items-center justify-center rounded-[10px] p-3 shadow-md"
-          style={{ elevation: 5 }}
+          style={{ elevation: 5, marginBottom: insets.bottom + 20 }}
         >
           <Text className="font-nunito text-lg font-bold text-white">
             {tr('transferNow')}
