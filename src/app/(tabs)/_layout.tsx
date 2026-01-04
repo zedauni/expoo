@@ -3,6 +3,7 @@ import { Tabs } from 'expo-router';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Image, Pressable } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import colors from '@/components/ui/colors';
 import images from '@/constants/images';
@@ -10,6 +11,7 @@ import images from '@/constants/images';
 export default function TabLayout() {
   const { t } = useTranslation();
 
+  const insets = useSafeAreaInsets();
   return (
     <Tabs
       initialRouteName="home/index"
@@ -19,7 +21,8 @@ export default function TabLayout() {
           justifyContent: 'center',
           alignItems: 'center',
           padding: 5,
-          height: 68,
+          height: 68 + insets.bottom,
+          paddingBottom: insets.bottom + 5,
           borderTopWidth: 0,
           backgroundColor: colors.white,
           paddingTop: 4,

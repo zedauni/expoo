@@ -16,6 +16,7 @@ import {
 } from 'react-native';
 import { showMessage } from 'react-native-flash-message';
 import IntlPhoneInput from 'react-native-intl-phone-input';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import Loader from '@/components/loader';
 import MyStatusBar from '@/components/my-status-bar';
@@ -25,8 +26,9 @@ import images from '@/constants/images';
 const { width, height } = Dimensions.get('window');
 
 const LoginScreen = () => {
+  const insets = useSafeAreaInsets();
   const router = useRouter();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [exitApp, setExitApp] = useState(0);
   const [loginLoaderVisible, setLoginLoaderVisible] = useState(false);
 
@@ -77,7 +79,10 @@ const LoginScreen = () => {
             source={images.bg}
             style={{ width, height: height * 0.3 }}
           />
-          <View className="mb-5 items-center justify-center">
+          <View
+            className="items-center justify-center"
+            style={{ marginBottom: insets.bottom + 20 }}
+          >
             <Image
               source={images.splashIcon}
               className="size-[78px]"
