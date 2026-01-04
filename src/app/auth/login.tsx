@@ -65,7 +65,7 @@ const LoginScreen = () => {
     setLoginLoaderVisible(true);
     setTimeout(() => {
       setLoginLoaderVisible(false);
-      router.push('/auth/register'); // Check route
+      router.replace('/(tabs)/home');
     }, 800);
   };
 
@@ -83,7 +83,7 @@ const LoginScreen = () => {
               className="size-[78px]"
               style={{ tintColor: colors.primary }}
             />
-            <Text className="font-inter text-[25px] font-semibold text-primary">
+            <Text className="text-primary font-inter text-[25px] font-semibold">
               STAR BANK
             </Text>
           </View>
@@ -121,7 +121,7 @@ const LoginScreen = () => {
                 <Text className="font-inter text-lg font-bold text-black">
                   {t('loginScreen.welcomeBack')}
                 </Text>
-                <Text className="font-inter text-sm font-semibold text-grey">
+                <Text className="text-grey font-inter text-sm font-semibold">
                   {t('loginScreen.happy')}
                 </Text>
               </View>
