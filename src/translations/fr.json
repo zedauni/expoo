@@ -1,0 +1,33 @@
+{
+  "onboarding": {
+    "message": "Bienvenue sur notre application"
+  },
+  "settings": {
+    "about": "À propos",
+    "app_name": "Notre App",
+    "arabic": "Arabe",
+    "english": "Anglais",
+    "generale": "Général",
+    "github": "Github",
+    "language": "Langue",
+    "links": "Liens",
+    "logout": "Déconnexion",
+    "more": "Plus",
+    "privacy": "Politique de confidentialité",
+    "rate": "Évaluer",
+    "share": "Partager",
+    "support": "Support",
+    "support_us": "Nous soutenir",
+    "terms": "Conditions d'utilisation",
+    "theme": {
+      "dark": "Sombre",
+      "light": "Clair",
+      "system": "Système",
+      "title": "Thème"
+    },
+    "title": "Paramètres",
+    "version": "Version",
+    "website": "Website"
+  },
+  "welcome": "Bienvenue sur notre application"
+}
