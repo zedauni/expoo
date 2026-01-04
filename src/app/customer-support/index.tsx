@@ -72,10 +72,7 @@ const CustomerSupportScreen = () => {
           */}
           <Image
             // @ts-ignore
-            source={
-              images.contactImage ||
-              require('../../assets/images/contact-image.png')
-            }
+            source={images.contactImage}
             className="size-[153px]"
             resizeMode="contain"
           />

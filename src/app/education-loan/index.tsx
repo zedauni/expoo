@@ -63,10 +63,7 @@ const EducationLoanScreen = () => {
       >
         <Image
           // @ts-ignore
-          source={
-            images.educationImage ||
-            require('../../assets/images/education-image.png')
-          }
+          source={images.educationImage}
           style={{ width: width, height: 190 }}
           resizeMode="stretch"
         />
