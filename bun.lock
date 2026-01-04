@@ -44,6 +44,7 @@
         "react-native-gesture-handler": "~2.24.0",
         "react-native-intl-phone-input": "^1.2.27",
         "react-native-keyboard-controller": "^1.17.4",
+        "react-native-maps": "^1.26.20",
         "react-native-mmkv": "~3.1.0",
         "react-native-otp-entry": "^1.8.5",
         "react-native-paper": "^5.14.5",
@@ -670,6 +671,8 @@
     "@types/eslint-scope": ["@types/eslint-scope@3.7.7", "", { "dependencies": { "@types/eslint": "9.6.1", "@types/estree": "1.0.6" } }, "sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg=="],
 
     "@types/estree": ["@types/estree@1.0.6", "", {}, "sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw=="],
+
+    "@types/geojson": ["@types/geojson@7946.0.16", "", {}, "sha512-6C8nqWur3j98U6+lXDfTUWIfgvZU+EumvpHKcYjujKH7woYyLj2sUmff0tRhrqM7BohUw7Pz3ZB1jj2gW9Fvmg=="],
 
     "@types/graceful-fs": ["@types/graceful-fs@4.1.9", "", { "dependencies": { "@types/node": "22.9.1" } }, "sha512-olP3sd1qOEe5dXTSaFvQG+02VdRXcdytWLAZsAq1PecU8uqQAhkrnbli7DagjtXKW/Bl7YJbUsa8MPcuc8LHEQ=="],
 
@@ -2274,6 +2277,8 @@
     "react-native-is-edge-to-edge": ["react-native-is-edge-to-edge@1.1.6", "", { "peerDependencies": { "react": "19.0.0", "react-native": "0.79.4" } }, "sha512-1pHnFTlBahins6UAajXUqeCOHew9l9C2C8tErnpGC3IyLJzvxD+TpYAixnCbrVS52f7+NvMttbiSI290XfwN0w=="],
 
     "react-native-keyboard-controller": ["react-native-keyboard-controller@1.17.4", "", { "dependencies": { "react-native-is-edge-to-edge": "1.1.6" }, "peerDependencies": { "react": "19.0.0", "react-native": "0.79.4", "react-native-reanimated": "3.17.5" } }, "sha512-aoXPy1LA4xPqBBv4gGZvGfMCIYbcWVWqDza0xEIC9TYla2Jj2H25ADnfcOk/5exrwUKsWiLFRywykSAR5RurFQ=="],
+
+    "react-native-maps": ["react-native-maps@1.26.20", "", { "dependencies": { "@types/geojson": "^7946.0.13" }, "peerDependencies": { "react": ">= 18.3.1", "react-native": ">= 0.76.0", "react-native-web": ">= 0.11" }, "optionalPeers": ["react-native-web"] }, "sha512-kWibDz6wLLQ0685gOEFz5jdzm4miD7PMeVdtZV7ilgftDcusC2iy7SueBJpHF0LKCoOSa1BEUiKqpx1dBMSNpA=="],
 
     "react-native-mmkv": ["react-native-mmkv@3.1.0", "", { "peerDependencies": { "react": "19.0.0", "react-native": "0.79.4" } }, "sha512-HDh89nYVSufHMweZ3TVNUHQp2lsEh1ApaoV08bUOU1nrlmGgC3I7tGUn1Uy40Hs7yRMPKx5NWKE5Dh86jTVrwg=="],
 
