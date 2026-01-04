@@ -96,9 +96,9 @@ const ServicesScreen = () => {
     if (index === 0) {
       router.push('/(tabs)/account/account-detail');
     } else if (index === 1) {
-      // router.push('/fundTransfer/fundTransferScreen');
+      router.push('/fund-transfer');
     } else if (index === 2) {
-      // router.push('/statement/statementScreen');
+      router.push('/statement');
     } else if (index === 3) {
       // router.push('(tabs)/deposit'); // Assuming separate tab or screen, check navigation structure
       // Original: navigation.navigate("(tabs)", { screen: "deposit/depositScreen" });
@@ -133,7 +133,7 @@ const ServicesScreen = () => {
         />
         <Text
           numberOfLines={1}
-          className="mt-1.5 overflow-hidden font-nunito text-[15px] font-bold text-primary"
+          className="text-primary mt-1.5 overflow-hidden font-nunito text-[15px] font-bold"
         >
           {item.title}
         </Text>
@@ -142,10 +142,10 @@ const ServicesScreen = () => {
   };
 
   return (
-    <View className="flex-1 bg-regularGrey">
+    <View className="bg-regularGrey flex-1">
       <MyStatusBar />
       <View
-        className="flex-row items-center bg-regularGrey px-5 py-3 shadow-md"
+        className="bg-regularGrey flex-row items-center px-5 py-3 shadow-md"
         style={{ elevation: 6 }}
       >
         <TouchableOpacity onPress={() => router.back()}>

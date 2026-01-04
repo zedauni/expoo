@@ -78,10 +78,10 @@ const AccountDetailScreen = () => {
   ];
 
   return (
-    <View className="flex-1 bg-regularGrey">
+    <View className="bg-regularGrey flex-1">
       <MyStatusBar />
       <View
-        className="flex-row items-center bg-regularGrey px-5 py-3 shadow-md"
+        className="bg-regularGrey flex-row items-center px-5 py-3 shadow-md"
         style={{ elevation: 6 }}
       >
         <TouchableOpacity onPress={() => router.back()}>
@@ -100,9 +100,9 @@ const AccountDetailScreen = () => {
         <View className="items-center justify-center">
           <TouchableOpacity
             onPress={() => setBankAccountNameBottomSheet(true)}
-            className="my-5 flex-row items-center justify-center rounded-[5px] border border-primary bg-white px-3 py-2.5"
+            className="border-primary my-5 flex-row items-center justify-center rounded-[5px] border bg-white px-3 py-2.5"
           >
-            <Text className="mx-2.5 font-nunito text-base font-bold text-primary">
+            <Text className="text-primary mx-2.5 font-nunito text-base font-bold">
               {selectBankAccountName}
             </Text>
             <Ionicons name="chevron-down" size={20} color={colors.primary} />
@@ -122,7 +122,7 @@ const AccountDetailScreen = () => {
             </Text>
             <Text
               numberOfLines={1}
-              className="mt-2.5 overflow-hidden font-nunito text-sm font-semibold text-grey"
+              className="text-grey mt-2.5 overflow-hidden font-nunito text-sm font-semibold"
             >
               {t('accountDetailScreen.accountNumber')}
             </Text>
@@ -136,13 +136,13 @@ const AccountDetailScreen = () => {
           <View className="flex-1 items-end">
             <Text
               numberOfLines={1}
-              className="overflow-hidden font-nunito text-sm font-bold text-grey"
+              className="text-grey overflow-hidden font-nunito text-sm font-bold"
             >
               {t('accountDetailScreen.totalBalance')}
             </Text>
             <Text
               numberOfLines={1}
-              className="mt-1.5 font-nunito text-xl font-bold text-primary"
+              className="text-primary mt-1.5 font-nunito text-xl font-bold"
             >
               $1000.00
             </Text>
@@ -162,7 +162,7 @@ const AccountDetailScreen = () => {
               >
                 <Text
                   numberOfLines={1}
-                  className="mx-2.5 flex-1 text-left font-nunito text-[15px] font-semibold text-grey"
+                  className="text-grey mx-2.5 flex-1 text-left font-nunito text-[15px] font-semibold"
                 >
                   {item.title}
                 </Text>
@@ -178,11 +178,8 @@ const AccountDetailScreen = () => {
         </View>
       </ScrollView>
       <TouchableOpacity
-        onPress={() =>
-          // router.push('/statement/statementScreen')
-          {}
-        }
-        className="m-5 items-center justify-center rounded-[10px] bg-primary py-3 shadow-md"
+        onPress={() => router.push('/statement')}
+        className="bg-primary m-5 items-center justify-center rounded-[10px] py-3 shadow-md"
         style={{
           elevation: 4,
           shadowColor: colors.primary,

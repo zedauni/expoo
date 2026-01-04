@@ -42,7 +42,7 @@ const AccountScreen = () => {
       onPress={onPress}
       className="mx-5 mb-5 flex-row items-center"
     >
-      <View className="size-9 items-center justify-center rounded-[18px] bg-lightGrey">
+      <View className="bg-lightGrey size-9 items-center justify-center rounded-[18px]">
         {icon}
       </View>
       <Text
@@ -55,7 +55,7 @@ const AccountScreen = () => {
   );
 
   return (
-    <View className="flex-1 bg-regularGrey">
+    <View className="bg-regularGrey flex-1">
       <MyStatusBar />
       <ImageBackground
         source={images.depositImage}
@@ -70,7 +70,7 @@ const AccountScreen = () => {
 
       <ScrollView showsVerticalScrollIndicator={false}>
         <View
-          className="mb-5 flex-row items-center bg-extraLightGrey px-5 py-3 shadow-md"
+          className="bg-extraLightGrey mb-5 flex-row items-center px-5 py-3 shadow-md"
           style={{ elevation: 6 }}
         >
           <Image
@@ -87,26 +87,18 @@ const AccountScreen = () => {
             </Text>
             <Text
               numberOfLines={1}
-              className="mt-0.5 font-nunito text-sm font-semibold text-grey"
+              className="text-grey mt-0.5 font-nunito text-sm font-semibold"
             >
               +91 1234567890
             </Text>
           </View>
-          <TouchableOpacity
-            onPress={() =>
-              // router.push('/editProfile/editProfileScreen')
-              {}
-            }
-          >
+          <TouchableOpacity onPress={() => router.push('/edit-profile')}>
             <Feather name="edit" size={20} color={colors.primary} />
           </TouchableOpacity>
         </View>
 
         <MenuItem
-          onPress={() =>
-            // router.push('/nearBy/nearByScreen')
-            {}
-          }
+          onPress={() => router.push('/nearby?title=Nearby Bank')}
           icon={
             <MaterialCommunityIcons
               name="bank-outline"
@@ -118,10 +110,7 @@ const AccountScreen = () => {
         />
 
         <MenuItem
-          onPress={() =>
-            // router.push('/nearBy/nearByScreen')
-            {}
-          }
+          onPress={() => router.push('/nearby?title=Nearby ATMs')}
           icon={
             <Octicons name="credit-card" size={18} color={colors.primary} />
           }
@@ -129,28 +118,19 @@ const AccountScreen = () => {
         />
 
         <MenuItem
-          onPress={() =>
-            // router.push('/changePin/changePinScreen')
-            {}
-          }
+          onPress={() => router.push('/change-pin')}
           icon={<Octicons name="pin" size={18} color={colors.primary} />}
           label={t('accountScreen.changePin')}
         />
 
         <MenuItem
-          onPress={() =>
-            // router.push('/language/languageScreen')
-            {}
-          }
+          onPress={() => router.push('/language')}
           icon={<Fontisto name="world-o" size={18} color={colors.primary} />}
           label={t('accountScreen.language')}
         />
 
         <MenuItem
-          onPress={() =>
-            // router.push('/privacyPolicy/privacyPolicyScreen')
-            {}
-          }
+          onPress={() => router.push('/privacy-policy')}
           icon={
             <MaterialCommunityIcons
               name="shield-alert-outline"
@@ -162,19 +142,13 @@ const AccountScreen = () => {
         />
 
         <MenuItem
-          onPress={() =>
-            // router.push('/termsCondition/termsConditionScreen')
-            {}
-          }
+          onPress={() => router.push('/terms-condition')}
           icon={<AntDesign name="profile" size={18} color={colors.primary} />}
           label={t('accountScreen.termsCondition')}
         />
 
         <MenuItem
-          onPress={() =>
-            // router.push('/customerSupport/customerSupportScreen')
-            {}
-          }
+          onPress={() => router.push('/customer-support')}
           icon={
             <AntDesign
               name="customer-service"

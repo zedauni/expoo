@@ -45,7 +45,7 @@ const DepositScreen = () => {
   ];
 
   return (
-    <View className="flex-1 bg-regularGrey">
+    <View className="bg-regularGrey flex-1">
       <MyStatusBar />
       <View className="flex-1">
         <ImageBackground
@@ -76,7 +76,7 @@ const DepositScreen = () => {
               >
                 <View className="flex-row items-center justify-between px-[18px] pb-[18px] pt-3.5">
                   <View className="flex-1 flex-row items-center">
-                    <View className="size-[38px] items-center justify-center rounded-full bg-extraLightGrey">
+                    <View className="bg-extraLightGrey size-[38px] items-center justify-center rounded-full">
                       <Image
                         resizeMode="contain"
                         source={images.primaryDeposit}
@@ -93,7 +93,7 @@ const DepositScreen = () => {
                       </Text>
                       <Text
                         numberOfLines={1}
-                        className="mt-[3px] overflow-hidden font-nunito text-sm font-bold text-grey"
+                        className="text-grey mt-[3px] overflow-hidden font-nunito text-sm font-bold"
                       >
                         {item.title}
                       </Text>
@@ -132,7 +132,7 @@ const DepositScreen = () => {
                   <View className="flex-1 items-start justify-center">
                     <Text
                       numberOfLines={1}
-                      className="overflow-hidden font-nunito text-sm font-semibold text-grey"
+                      className="text-grey overflow-hidden font-nunito text-sm font-semibold"
                     >
                       {t('depositScreen.depositTo')}
                     </Text>
@@ -146,13 +146,13 @@ const DepositScreen = () => {
                   <View className="mx-0.5 flex-1 items-center justify-center">
                     <Text
                       numberOfLines={1}
-                      className="overflow-hidden font-nunito text-sm font-semibold text-grey"
+                      className="text-grey overflow-hidden font-nunito text-sm font-semibold"
                     >
                       {t('depositScreen.status')}
                     </Text>
                     <Text
                       numberOfLines={1}
-                      className="mt-1.5 font-nunito text-[15px] font-semibold text-red"
+                      className="text-red mt-1.5 font-nunito text-[15px] font-semibold"
                     >
                       {item.status}
                     </Text>
@@ -160,7 +160,7 @@ const DepositScreen = () => {
                   <View className="flex-1 items-end justify-center">
                     <Text
                       numberOfLines={1}
-                      className="overflow-hidden font-nunito text-sm font-semibold text-grey"
+                      className="text-grey overflow-hidden font-nunito text-sm font-semibold"
                     >
                       {t('depositScreen.rate')}
                     </Text>
@@ -186,7 +186,7 @@ const DepositScreen = () => {
           >
             <View className="flex-row items-center justify-between px-[18px] pb-[18px] pt-3.5">
               <View className="flex-1 flex-row items-center">
-                <View className="size-[38px] items-center justify-center rounded-full bg-lightGrey">
+                <View className="bg-lightGrey size-[38px] items-center justify-center rounded-full">
                   <Image
                     resizeMode="contain"
                     source={images.primaryDeposit}
@@ -203,7 +203,7 @@ const DepositScreen = () => {
                   </Text>
                   <Text
                     numberOfLines={1}
-                    className="mt-[3px] overflow-hidden font-nunito text-sm font-bold text-grey"
+                    className="text-grey mt-[3px] overflow-hidden font-nunito text-sm font-bold"
                   >
                     10 march 2021
                   </Text>
@@ -229,7 +229,7 @@ const DepositScreen = () => {
               <View className="flex-1 items-start justify-center">
                 <Text
                   numberOfLines={1}
-                  className="overflow-hidden font-nunito text-sm font-semibold text-grey"
+                  className="text-grey overflow-hidden font-nunito text-sm font-semibold"
                 >
                   {t('depositScreen.depositTo')}
                 </Text>
@@ -243,13 +243,13 @@ const DepositScreen = () => {
               <View className="mx-0.5 flex-1 items-center justify-center">
                 <Text
                   numberOfLines={1}
-                  className="overflow-hidden font-nunito text-sm font-semibold text-grey"
+                  className="text-grey overflow-hidden font-nunito text-sm font-semibold"
                 >
                   {t('depositScreen.status')}
                 </Text>
                 <Text
                   numberOfLines={1}
-                  className="mt-1.5 font-nunito text-[15px] font-semibold text-green"
+                  className="text-green mt-1.5 font-nunito text-[15px] font-semibold"
                 >
                   {t('depositScreen.completed')}
                 </Text>
@@ -257,7 +257,7 @@ const DepositScreen = () => {
               <View className="flex-1 items-end justify-center">
                 <Text
                   numberOfLines={1}
-                  className="overflow-hidden font-nunito text-sm font-semibold text-grey"
+                  className="text-grey overflow-hidden font-nunito text-sm font-semibold"
                 >
                   {t('depositScreen.rate')}
                 </Text>
@@ -273,11 +273,8 @@ const DepositScreen = () => {
         </ScrollView>
 
         <TouchableOpacity
-          onPress={() =>
-            // router.push('/addDeposit/addDepositScreen')
-            {}
-          }
-          className="absolute bottom-5 right-5 size-[60px] items-center justify-center rounded-full bg-primary"
+          onPress={() => router.push('/add-deposit')}
+          className="bg-primary absolute bottom-5 right-5 size-[60px] items-center justify-center rounded-full"
         >
           <MaterialIcons name="add" size={30} color={colors.white} />
         </TouchableOpacity>

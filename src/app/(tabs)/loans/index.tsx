@@ -1,3 +1,4 @@
+import { useRouter } from 'expo-router';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import {
@@ -21,6 +22,7 @@ const { width } = Dimensions.get('window');
 const CARD_WIDTH = width * 0.85;
 
 const LoansScreen = () => {
+  const router = useRouter();
   const { t, i18n } = useTranslation();
   const isRtl = i18n.dir() === 'rtl';
 
@@ -52,10 +54,7 @@ const LoansScreen = () => {
   const renderItemLoan = ({ item }: { item: LoanItem }) => {
     return (
       <TouchableOpacity
-        onPress={() =>
-          // router.push('/educationLoan/educationLoanScreen')
-          {}
-        }
+        onPress={() => router.push('/education-loan')}
         className="mx-2.5 my-5 h-[150px] flex-row rounded-[10px] bg-white shadow-md"
         style={{ width: CARD_WIDTH, elevation: 6 }}
       >
@@ -70,26 +69,23 @@ const LoansScreen = () => {
         <View className="flex-[4] justify-center px-4 pl-1.5">
           <Text
             numberOfLines={2}
-            className="overflow-hidden font-nunito text-base font-bold text-primary"
+            className="text-primary overflow-hidden font-nunito text-base font-bold"
           >
             {item.title}
           </Text>
           <Text
             numberOfLines={1}
-            className="mt-1 overflow-hidden font-nunito text-sm font-bold text-grey"
+            className="text-grey mt-1 overflow-hidden font-nunito text-sm font-bold"
           >
             {item.other}
           </Text>
           <TouchableOpacity
-            onPress={() =>
-              // router.push('/educationLoan/educationLoanScreen')
-              {}
-            }
-            className="mt-2.5 w-[95px] items-center justify-center rounded-[5px] border border-primary bg-white p-1"
+            onPress={() => router.push('/education-loan')}
+            className="border-primary mt-2.5 w-[95px] items-center justify-center rounded-[5px] border bg-white p-1"
           >
             <Text
               numberOfLines={1}
-              className="overflow-hidden font-nunito text-sm font-bold text-primary"
+              className="text-primary overflow-hidden font-nunito text-sm font-bold"
             >
               {t('loansScreen.applyNow')}
             </Text>
@@ -134,7 +130,7 @@ const LoansScreen = () => {
   ];
 
   return (
-    <View className="flex-1 bg-regularGrey">
+    <View className="bg-regularGrey flex-1">
       <MyStatusBar />
       <ImageBackground
         source={images.depositImage}
@@ -181,7 +177,7 @@ const LoansScreen = () => {
               >
                 <View className="flex-row items-center justify-between px-4 pb-4 pt-3.5">
                   <View className="flex-1 flex-row items-center">
-                    <View className="size-[38px] items-center justify-center rounded-full bg-extraLightGrey">
+                    <View className="bg-extraLightGrey size-[38px] items-center justify-center rounded-full">
                       <Image
                         resizeMode="contain"
                         source={item.image}
@@ -198,7 +194,7 @@ const LoansScreen = () => {
                       </Text>
                       <Text
                         numberOfLines={1}
-                        className="mt-1 overflow-hidden font-nunito text-sm font-semibold text-grey"
+                        className="text-grey mt-1 overflow-hidden font-nunito text-sm font-semibold"
                       >
                         {item.number}
                       </Text>
@@ -207,7 +203,7 @@ const LoansScreen = () => {
 
                   <Text
                     numberOfLines={1}
-                    className="max-w-[100px] font-nunito text-base font-bold text-primary"
+                    className="text-primary max-w-[100px] font-nunito text-base font-bold"
                   >
                     {item.dollar}
                   </Text>
@@ -224,7 +220,7 @@ const LoansScreen = () => {
                   <View className="flex-1 items-start justify-center">
                     <Text
                       numberOfLines={1}
-                      className="overflow-hidden font-nunito text-sm font-semibold text-grey"
+                      className="text-grey overflow-hidden font-nunito text-sm font-semibold"
                     >
                       {t('loansScreen.period')}
                     </Text>
@@ -238,7 +234,7 @@ const LoansScreen = () => {
                   <View className="mx-1 flex-1 items-center justify-center">
                     <Text
                       numberOfLines={1}
-                      className="overflow-hidden font-nunito text-sm font-semibold text-grey"
+                      className="text-grey overflow-hidden font-nunito text-sm font-semibold"
                     >
                       {t('loansScreen.rate')}
                     </Text>
@@ -252,7 +248,7 @@ const LoansScreen = () => {
                   <View className="flex-1 items-end justify-center">
                     <Text
                       numberOfLines={1}
-                      className="overflow-hidden font-nunito text-sm font-semibold text-grey"
+                      className="text-grey overflow-hidden font-nunito text-sm font-semibold"
                     >
                       {t('loansScreen.eMI')}
                     </Text>
@@ -267,12 +263,17 @@ const LoansScreen = () => {
 
                 <TouchableOpacity
                   onPress={() =>
-                    // router.push('/loansStatement/loansStatementScreen')
-                    {}
+                    router.push({
+                      pathname: '/loans-statement',
+                      params: {
+                        title: item.title,
+                        image: item.image as unknown as string,
+                      },
+                    })
                   }
-                  className="items-center justify-center rounded-b-[10px] bg-lightPink p-2"
+                  className="bg-lightPink items-center justify-center rounded-b-[10px] p-2"
                 >
-                  <Text className="font-nunito text-base font-bold text-primary">
+                  <Text className="text-primary font-nunito text-base font-bold">
                     {t('loansScreen.viewStatement')}
                   </Text>
                 </TouchableOpacity>

@@ -57,23 +57,23 @@ const HomeScreen = () => {
         <View className="items-start p-[17px]">
           <Text
             numberOfLines={1}
-            className="font-nunito text-lg font-bold text-extraLightRegularGrey"
+            className="text-extraLightRegularGrey font-nunito text-lg font-bold"
           >
             {`${t('homeScreen.totalBalance')} : `}
-            <Text className="font-nunito text-[22px] font-bold text-extraLightRegularGrey">
+            <Text className="text-extraLightRegularGrey font-nunito text-[22px] font-bold">
               {item.balance}
             </Text>
           </Text>
 
           <Text
             numberOfLines={1}
-            className="mt-[15px] font-nunito text-sm font-semibold text-extraLightPink"
+            className="text-extraLightPink mt-[15px] font-nunito text-sm font-semibold"
           >
             {item.name}
           </Text>
           <Text
             numberOfLines={1}
-            className="mt-[3px] font-nunito text-sm font-bold text-extraLightPink"
+            className="text-extraLightPink mt-[3px] font-nunito text-sm font-bold"
           >
             {item.acNumber}
           </Text>
@@ -129,7 +129,7 @@ const HomeScreen = () => {
     } else if (index === 2) {
       // router.push('/statement/statementScreen');
     } else if (index === 5) {
-      // router.push('/services/servicesScreen');
+      router.push('/services');
     }
   };
 
@@ -204,13 +204,8 @@ const HomeScreen = () => {
           <Text className="mr-2.5 flex-1 text-left font-nunito text-lg font-bold text-black">
             {t('homeScreen.transaction')}
           </Text>
-          <TouchableOpacity
-            onPress={() =>
-              // router.push('/latestTransaction/latestTransactionScreen')
-              {}
-            }
-          >
-            <Text className="max-w-[100px] font-nunito text-sm font-bold text-grey">
+          <TouchableOpacity onPress={() => router.push('/latest-transaction')}>
+            <Text className="text-grey max-w-[100px] font-nunito text-sm font-bold">
               {t('homeScreen.seeAll')}
             </Text>
           </TouchableOpacity>
@@ -223,7 +218,7 @@ const HomeScreen = () => {
               style={{ elevation: 6 }}
             >
               <View className="flex-1 flex-row items-center">
-                <View className="size-[38px] items-center justify-center rounded-full bg-extraLightGrey">
+                <View className="bg-extraLightGrey size-[38px] items-center justify-center rounded-full">
                   <Image
                     resizeMode="contain"
                     source={item.image}
@@ -239,7 +234,7 @@ const HomeScreen = () => {
                   </Text>
                   <Text
                     numberOfLines={1}
-                    className="mt-1 font-nunito text-xs font-bold text-grey"
+                    className="text-grey mt-1 font-nunito text-xs font-bold"
                   >
                     {item.other}
                   </Text>
@@ -264,7 +259,7 @@ const HomeScreen = () => {
   return (
     <View className="flex-1">
       <MyStatusBar />
-      <View className="flex-1 bg-regularGrey">
+      <View className="bg-regularGrey flex-1">
         <Image
           source={images.homeImage} // Make sure this exists in images.ts
           style={{ width: width, height: 220 }}
@@ -281,12 +276,7 @@ const HomeScreen = () => {
                 STAR BANK
               </Text>
             </View>
-            <TouchableOpacity
-              onPress={() =>
-                // router.push('/notification/notificationScreen')
-                {}
-              }
-            >
+            <TouchableOpacity onPress={() => router.push('/notification')}>
               <Ionicons
                 name="notifications-outline"
                 size={25}
