@@ -41,6 +41,12 @@ export default function RootLayout() {
     NunitoSans_ExtraBold: require('../../assets/fonts/NunitoSans-ExtraBold.ttf'),
   });
 
+  React.useEffect(() => {
+    if (fontsLoaded || fontError) {
+      SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded, fontError]);
+
   if (!fontsLoaded && !fontError) {
     return null;
   }
