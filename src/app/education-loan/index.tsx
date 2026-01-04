@@ -12,6 +12,7 @@ import {
   View,
 } from 'react-native';
 import DashedLine from 'react-native-dashed-line';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import EducationLoanModal from '@/components/education-loan-modal';
 import MyStatusBar from '@/components/my-status-bar';
@@ -23,6 +24,7 @@ const { width } = Dimensions.get('window');
 const EducationLoanScreen = () => {
   const router = useRouter();
   const { t, i18n } = useTranslation();
+  const insets = useSafeAreaInsets();
   const isRtl = i18n.dir() === 'rtl';
 
   function tr(key: string) {
@@ -60,6 +62,7 @@ const EducationLoanScreen = () => {
       <ScrollView
         showsVerticalScrollIndicator={false}
         automaticallyAdjustKeyboardInsets={true}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 20 }}
       >
         <Image
           // @ts-ignore
@@ -140,7 +143,7 @@ const EducationLoanScreen = () => {
       <TouchableOpacity
         onPress={() => setEducationLoanModal(true)}
         className="bg-primary m-5 items-center justify-center rounded-[10px] p-3 shadow-md"
-        style={{ elevation: 5 }}
+        style={{ elevation: 5, marginBottom: insets.bottom + 20 }}
       >
         <Text
           numberOfLines={1}

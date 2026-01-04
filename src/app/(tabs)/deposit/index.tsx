@@ -12,6 +12,7 @@ import {
   View,
 } from 'react-native';
 import DashedLine from 'react-native-dashed-line';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
@@ -21,6 +22,7 @@ const { width } = Dimensions.get('window');
 
 const DepositScreen = () => {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   const { t } = useTranslation();
 
   const currentDepositList = [
@@ -61,7 +63,7 @@ const DepositScreen = () => {
 
         <ScrollView
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ paddingBottom: 80 }}
+          contentContainerStyle={{ paddingBottom: insets.bottom + 80 }}
         >
           <Text className="mx-5 mb-4 mt-5 text-left font-nunito text-base font-semibold text-black">
             {t('depositScreen.currentDeposit')}
@@ -274,7 +276,8 @@ const DepositScreen = () => {
 
         <TouchableOpacity
           onPress={() => router.push('/add-deposit')}
-          className="bg-primary absolute bottom-5 right-5 size-[60px] items-center justify-center rounded-full"
+          className="bg-primary absolute right-5 size-[60px] items-center justify-center rounded-full"
+          style={{ bottom: insets.bottom + 20 }}
         >
           <MaterialIcons name="add" size={30} color={colors.white} />
         </TouchableOpacity>

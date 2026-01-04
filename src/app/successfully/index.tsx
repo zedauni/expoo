@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Text, TouchableOpacity, View } from 'react-native';
 import DashedLine from 'react-native-dashed-line';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
@@ -11,6 +12,7 @@ import colors from '@/components/ui/colors';
 const SuccessfullyScreen = () => {
   const router = useRouter();
   const { t, i18n } = useTranslation();
+  const insets = useSafeAreaInsets();
   const isRtl = i18n.dir() === 'rtl';
 
   function tr(key: string) {
@@ -137,7 +139,10 @@ const SuccessfullyScreen = () => {
         className="self-center"
         onPress={() => router.replace('/(tabs)/home')}
       >
-        <Text className="m-5 text-center font-nunito text-base font-bold text-black">
+        <Text
+          className="m-5 text-center font-nunito text-base font-bold text-black"
+          style={{ marginBottom: insets.bottom + 20 }}
+        >
           {tr('backToHome')}
         </Text>
       </TouchableOpacity>

@@ -13,6 +13,7 @@ import {
   View,
 } from 'react-native';
 import MapView, { Marker, type MarkerPressEvent } from 'react-native-maps';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
@@ -25,6 +26,7 @@ const NearByScreen = () => {
   const router = useRouter();
   const { title } = useLocalSearchParams();
   const { t, i18n } = useTranslation();
+  const insets = useSafeAreaInsets();
   const isRtl = i18n.dir() === 'rtl';
 
   const tr = React.useCallback(
@@ -202,7 +204,10 @@ const NearByScreen = () => {
       )}
 
       {mapReady && (
-        <View className="absolute bottom-0 z-[1]">
+        <View
+          className="absolute bottom-0 z-[1]"
+          style={{ paddingBottom: insets.bottom }}
+        >
           <Animated.ScrollView
             horizontal
             pagingEnabled

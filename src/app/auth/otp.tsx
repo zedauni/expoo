@@ -14,6 +14,7 @@ import {
   View,
 } from 'react-native';
 import { OtpInput } from 'react-native-otp-entry';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import Loader from '@/components/loader';
 import MyStatusBar from '@/components/my-status-bar';
@@ -24,6 +25,7 @@ const { width, height } = Dimensions.get('window');
 
 const OtpScreen = () => {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   const { t } = useTranslation();
 
   const [verifyLoaderVisible, setVerifyLoaderVisible] = useState(false);
@@ -50,13 +52,16 @@ const OtpScreen = () => {
             source={images.bg}
             style={{ width, height: height * 0.3 }}
           />
-          <View className="mb-5 items-center justify-center">
+          <View
+            className="mb-5 items-center justify-center"
+            style={{ marginBottom: insets.bottom + 20 }}
+          >
             <Image
               source={images.splashIcon}
               className="size-[78px]"
               style={{ tintColor: colors.primary }}
             />
-            <Text className="font-inter text-[25px] font-semibold text-primary">
+            <Text className="text-primary font-inter text-[25px] font-semibold">
               STAR BANK
             </Text>
           </View>
@@ -98,7 +103,7 @@ const OtpScreen = () => {
                   className="mt-2.5 size-[140px] self-center"
                 />
 
-                <Text className="mx-8 text-center font-inter text-sm font-semibold text-grey">
+                <Text className="text-grey mx-8 text-center font-inter text-sm font-semibold">
                   {t('otpScreen.pleaseEnter')}
                 </Text>
 
@@ -150,7 +155,7 @@ const OtpScreen = () => {
                   </Text>
                 </TouchableOpacity>
 
-                <Text className="mb-5 text-center font-inter text-base font-bold text-grey">
+                <Text className="text-grey mb-5 text-center font-inter text-base font-bold">
                   {t('otpScreen.resend')}
                 </Text>
               </ScrollView>

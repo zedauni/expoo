@@ -17,6 +17,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import LogoutModal from '@/components/logout-modal';
 import MyStatusBar from '@/components/my-status-bar';
@@ -27,6 +28,7 @@ const { width } = Dimensions.get('window');
 
 const AccountScreen = () => {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   const { t } = useTranslation();
 
   const [logoutModalVisible, setLogoutModalVisible] = useState(false);
@@ -68,7 +70,10 @@ const AccountScreen = () => {
         </Text>
       </ImageBackground>
 
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 20 }}
+      >
         <View
           className="bg-extraLightGrey mb-5 flex-row items-center px-5 py-3 shadow-md"
           style={{ elevation: 6 }}

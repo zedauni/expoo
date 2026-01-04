@@ -3,6 +3,7 @@ import { useRouter } from 'expo-router';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
@@ -11,6 +12,7 @@ import images from '@/constants/images';
 const TermsConditionScreen = () => {
   const router = useRouter();
   const { t, i18n } = useTranslation();
+  const insets = useSafeAreaInsets();
   const isRtl = i18n.dir() === 'rtl';
 
   function tr(key: string) {
@@ -38,7 +40,10 @@ const TermsConditionScreen = () => {
           {tr('termsAndCondition')}
         </Text>
       </View>
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 20 }}
+      >
         <View className="items-center justify-center p-5">
           <Image
             source={images.splashIcon}

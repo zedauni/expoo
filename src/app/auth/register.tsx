@@ -14,6 +14,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import Loader from '@/components/loader';
 import MyStatusBar from '@/components/my-status-bar';
@@ -24,6 +25,7 @@ const { width, height } = Dimensions.get('window');
 
 const RegisterScreen = () => {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   const { t } = useTranslation();
 
   const [name, setName] = useState<string>('');
@@ -48,13 +50,16 @@ const RegisterScreen = () => {
             source={images.bg}
             style={{ width, height: height * 0.3 }}
           />
-          <View className="mb-5 items-center justify-center">
+          <View
+            className="mb-5 items-center justify-center"
+            style={{ marginBottom: insets.bottom + 20 }}
+          >
             <Image
               source={images.splashIcon}
               className="size-[78px]"
               style={{ tintColor: colors.primary }}
             />
-            <Text className="font-inter text-[25px] font-semibold text-primary">
+            <Text className="text-primary font-inter text-[25px] font-semibold">
               STAR BANK
             </Text>
           </View>

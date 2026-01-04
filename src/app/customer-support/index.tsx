@@ -10,6 +10,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import Loader from '@/components/loader';
 import MyStatusBar from '@/components/my-status-bar';
@@ -19,6 +20,7 @@ import images from '@/constants/images';
 const CustomerSupportScreen = () => {
   const router = useRouter();
   const { t, i18n } = useTranslation();
+  const insets = useSafeAreaInsets();
   const isRtl = i18n.dir() === 'rtl';
 
   function tr(key: string) {
@@ -64,6 +66,7 @@ const CustomerSupportScreen = () => {
       <ScrollView
         showsVerticalScrollIndicator={false}
         automaticallyAdjustKeyboardInsets={true}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 20 }}
       >
         <View className="my-5 items-center justify-center">
           {/* Note: Check if contactImage exists in images.ts. If not, I should likely add it.
@@ -147,7 +150,7 @@ const CustomerSupportScreen = () => {
       <TouchableOpacity
         onPress={handleSubmit}
         className="bg-primary m-5 items-center justify-center rounded-[10px] p-3 shadow-md"
-        style={{ elevation: 5 }}
+        style={{ elevation: 5, marginBottom: insets.bottom + 20 }}
       >
         <Text className="font-nunito text-lg font-bold text-white">
           {tr('submit')}

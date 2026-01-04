@@ -12,6 +12,7 @@ import {
   View,
 } from 'react-native';
 import { BottomSheet } from 'react-native-btr';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import Loader from '@/components/loader';
 import MyStatusBar from '@/components/my-status-bar';
@@ -28,6 +29,7 @@ const EditProfileScreen = () => {
     return t(`editProfileScreen.${key}`);
   }
 
+  const insets = useSafeAreaInsets();
   const [name, setName] = useState<string>('Leslie Alexander');
   const [email, setEmail] = useState<string>('lesliealexander example .com');
   const [number, setNumber] = useState<string>('1234567890');
@@ -115,6 +117,7 @@ const EditProfileScreen = () => {
       <ScrollView
         showsVerticalScrollIndicator={false}
         automaticallyAdjustKeyboardInsets={true}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 20 }}
       >
         <View className="my-8 mt-5 items-center justify-center self-center">
           {!pickedImage ? (
@@ -213,7 +216,7 @@ const EditProfileScreen = () => {
       <TouchableOpacity
         onPress={handleUpdate}
         className="bg-primary m-5 items-center justify-center rounded-[10px] p-3 shadow-md"
-        style={{ elevation: 5 }}
+        style={{ elevation: 5, marginBottom: insets.bottom + 20 }}
       >
         <Text className="font-nunito text-lg font-bold text-white">
           {tr('update')}
@@ -225,7 +228,10 @@ const EditProfileScreen = () => {
         onBackButtonPress={toggleCloseUploadImage}
         onBackdropPress={toggleCloseUploadImage}
       >
-        <View className="rounded-t-[10px] bg-white py-3">
+        <View
+          className="rounded-t-[10px] bg-white py-3"
+          style={{ paddingBottom: insets.bottom + 20 }}
+        >
           <Text className="mb-3 text-center font-nunito text-[18px] font-semibold text-black">
             {tr('changeProfile')}
           </Text>

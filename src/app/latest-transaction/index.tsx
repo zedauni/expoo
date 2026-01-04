@@ -10,6 +10,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
@@ -18,6 +19,7 @@ import images from '@/constants/images';
 const LatestTransactionScreen = () => {
   const router = useRouter();
   const { t, i18n } = useTranslation();
+  const insets = useSafeAreaInsets();
   const isRtl = i18n.dir() === 'rtl';
 
   function tr(key: string) {
@@ -202,7 +204,10 @@ const LatestTransactionScreen = () => {
         renderItem={renderItem}
         keyExtractor={(item) => item.key}
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingTop: 20 }}
+        contentContainerStyle={{
+          paddingTop: 20,
+          paddingBottom: insets.bottom + 20,
+        }}
       />
     </View>
   );

@@ -12,6 +12,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
@@ -22,6 +23,7 @@ const CARD_WIDTH = width * 0.8;
 
 const HomeScreen = () => {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   const { t } = useTranslation();
 
   interface AccountDetailItem {
@@ -313,6 +315,7 @@ const HomeScreen = () => {
             </Text>
           )}
           ListFooterComponent={<ListFooterComponent />}
+          contentContainerStyle={{ paddingBottom: insets.bottom + 20 }}
         />
       </View>
     </View>

@@ -10,6 +10,7 @@ import {
   View,
 } from 'react-native';
 import { showMessage } from 'react-native-flash-message';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { SwipeListView } from 'react-native-swipe-list-view';
 
 import MyStatusBar from '@/components/my-status-bar';
@@ -18,6 +19,7 @@ import colors from '@/components/ui/colors';
 const NotificationScreen = () => {
   const router = useRouter();
   const { t, i18n } = useTranslation();
+  const insets = useSafeAreaInsets();
   const isRtl = i18n.dir() === 'rtl';
 
   const notificationList = [
@@ -142,11 +144,11 @@ const NotificationScreen = () => {
             {data.item.description}
           </Text>
 
-          <View className="border-t-[0.5px] border-lightGrey" />
+          <View className="border-lightGrey border-t-[0.5px]" />
 
           <Text
             numberOfLines={1}
-            className="overflow-hidden pt-2.5 text-left font-nunito text-xs font-semibold text-grey"
+            className="text-grey overflow-hidden pt-2.5 text-left font-nunito text-xs font-semibold"
           >
             {data.item.status}
           </Text>
@@ -155,13 +157,13 @@ const NotificationScreen = () => {
     );
   };
 
-  const renderHiddenItem = () => <View className="mb-5 flex-1 bg-primary" />;
+  const renderHiddenItem = () => <View className="bg-primary mb-5 flex-1" />;
 
   return (
-    <View className="flex-1 bg-regularGrey">
+    <View className="bg-regularGrey flex-1">
       <MyStatusBar />
       <View
-        className="flex-row items-center bg-regularGrey px-5 py-3 shadow-md"
+        className="bg-regularGrey flex-row items-center px-5 py-3 shadow-md"
         style={{ elevation: 6 }}
       >
         <TouchableOpacity onPress={() => router.back()}>
@@ -183,7 +185,7 @@ const NotificationScreen = () => {
             size={48}
             color={colors.grey}
           />
-          <Text className="mt-2.5 font-nunito text-base font-bold text-grey">
+          <Text className="text-grey mt-2.5 font-nunito text-base font-bold">
             {t('notificationScreen.noNotification')}
           </Text>
         </View>
@@ -197,7 +199,10 @@ const NotificationScreen = () => {
           leftOpenValue={Dimensions.get('window').width}
           useNativeDriver={false}
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ paddingTop: 20 }}
+          contentContainerStyle={{
+            paddingTop: 20,
+            paddingBottom: insets.bottom + 20,
+          }}
         />
       )}
     </View>

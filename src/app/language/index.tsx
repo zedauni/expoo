@@ -3,6 +3,7 @@ import { useRouter } from 'expo-router';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import Loader from '@/components/loader';
 import MyStatusBar from '@/components/my-status-bar';
@@ -19,6 +20,7 @@ const LanguageScreen = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(
     language || i18n.resolvedLanguage
   );
+  const insets = useSafeAreaInsets();
   const [updateLoader, setUpdateLoader] = useState(false);
 
   function tr(key: string) {
@@ -89,7 +91,10 @@ const LanguageScreen = () => {
         </Text>
       </View>
 
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 20 }}
+      >
         <View className="mt-5">
           <LanguageOpt name="Français" lang="fr" />
           <LanguageOpt name="English" lang="en" />
@@ -105,7 +110,7 @@ const LanguageScreen = () => {
           }
         }}
         className="bg-primary m-5 items-center justify-center rounded-[10px] p-3 shadow-md"
-        style={{ elevation: 5 }}
+        style={{ elevation: 5, marginBottom: insets.bottom + 20 }}
       >
         <Text className="font-nunito text-lg font-bold text-white">
           {tr('update')}

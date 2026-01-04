@@ -13,6 +13,7 @@ import {
   View,
 } from 'react-native';
 import DashedLine from 'react-native-dashed-line';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
@@ -24,6 +25,7 @@ const CARD_WIDTH = width * 0.85;
 const LoansScreen = () => {
   const router = useRouter();
   const { t, i18n } = useTranslation();
+  const insets = useSafeAreaInsets();
   const isRtl = i18n.dir() === 'rtl';
 
   interface LoanItem {
@@ -141,7 +143,10 @@ const LoansScreen = () => {
         </Text>
       </ImageBackground>
 
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 20 }}
+      >
         <FlatList
           inverted={isRtl}
           horizontal

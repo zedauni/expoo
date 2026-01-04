@@ -9,6 +9,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import Loader from '@/components/loader';
 import MyStatusBar from '@/components/my-status-bar';
@@ -17,6 +18,7 @@ import colors from '@/components/ui/colors';
 const ChangePinScreen = () => {
   const router = useRouter();
   const { t, i18n } = useTranslation();
+  const insets = useSafeAreaInsets();
   const isRtl = i18n.dir() === 'rtl';
 
   function tr(key: string) {
@@ -62,6 +64,7 @@ const ChangePinScreen = () => {
       <ScrollView
         showsVerticalScrollIndicator={false}
         automaticallyAdjustKeyboardInsets={true}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 20 }}
       >
         <View className="m-5">
           <Text
