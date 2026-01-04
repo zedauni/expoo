@@ -47,7 +47,7 @@ export default function TabLayout() {
       })}
     >
       <Tabs.Screen
-        name="home"
+        name="home/index"
         options={{
           headerShown: false,
           title: t('bottomTab.home'),
@@ -61,17 +61,13 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="deposit"
+        name="deposit/index"
         options={{
           headerShown: false,
           title: t('bottomTab.deposit'),
           tabBarIcon: ({ focused }) => (
             <Image
-              source={
-                focused
-                  ? images.primaryDeposit // Make sure these keys exist in images.ts
-                  : images.greyDeposit
-              }
+              source={focused ? images.primaryDeposit : images.greyDeposit}
               resizeMode="contain"
               style={{
                 height: 24,
@@ -83,7 +79,7 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="loans"
+        name="loans/index"
         options={{
           headerShown: false,
           title: t('bottomTab.loans'),
@@ -97,7 +93,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="account"
+        name="account/index"
         options={{
           headerShown: false,
           title: t('bottomTab.account'),
@@ -108,6 +104,13 @@ export default function TabLayout() {
               color={focused ? colors.primary : colors.grey}
             />
           ),
+        }}
+      />
+      <Tabs.Screen
+        name="account/account-detail"
+        options={{
+          href: null,
+          headerShown: false,
         }}
       />
     </Tabs>
