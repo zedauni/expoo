@@ -1,33 +1,317 @@
 {
-  "onboarding": {
-    "message": "Welcome to obytes app site"
+  "accountDetailScreen": {
+    "account": "Account",
+    "accountDetail": "Account details",
+    "accountNumber": "Account number",
+    "branchCode": "Branch code",
+    "branchName": "Branch name",
+    "cif": "CIF",
+    "currentAccount": "Current account",
+    "ifsc": "IFSC",
+    "mmid": "MMId",
+    "nRIAccount": "NRI account ",
+    "openingDate": "Account opening date",
+    "salaryAccount": "Salary account",
+    "saving": "Saving account",
+    "totalBalance": "Total balance",
+    "viewStateMent": "View statement"
   },
-  "settings": {
-    "about": "About",
-    "app_name": "App Name",
-    "arabic": "Arabic",
-    "english": "English",
-    "generale": "General",
-    "github": "Github",
+  "accountScreen": {
+    "PrivacyPolicy": "Privacy policy",
+    "account": "Account",
+    "changePin": "Change pin",
+    "customerSupport": "Customer support",
     "language": "Language",
-    "links": "Links",
     "logout": "Logout",
-    "more": "More",
-    "privacy": "Privacy Policy",
-    "rate": "Rate",
-    "share": "Share",
-    "support": "Support",
-    "support_us": "Support Us",
-    "terms": "Terms of Service",
-    "theme": {
-      "dark": "Dark",
-      "light": "Light",
-      "system": "System",
-      "title": "Theme"
-    },
-    "title": "Settings",
-    "version": "Version",
-    "website": "Website"
+    "nearbyATMs": "Nearby ATMs",
+    "nearbyBank": "Nearby bank ",
+    "termsCondition": "Terms & condition"
   },
-  "welcome": "Welcome to obytes app site"
+  "addDepositScreen": {
+    "addDeposit": "Add deposit",
+    "amount": "Amount",
+    "backSideImage": "Upload check back side image",
+    "currentAccount": "Current account",
+    "depositNow": "Deposit now",
+    "depositPeriod": "Choose deposit period",
+    "depositTo": "Deposit to",
+    "enterDeposit": "Enter deposit amount",
+    "frontSideImage": "Upload check front side image",
+    "nriAccount": "NRI account",
+    "salaryAccount": "Salary account",
+    "savingAccount": "Saving account",
+    "selectAmount": "Select account",
+    "uploadImage": "Upload check image",
+    "yourRate": "Your rate is 8%"
+  },
+  "beneficiaryPayScreen": {
+    "accountNumber": "Beneficiary account number",
+    "amount": "Amount",
+    "bankName": "Beneficiary bank name",
+    "beneficiaryInfo": "Beneficiary info",
+    "currentAccount": "Current account",
+    "fromAccount": "From account",
+    "name": "Beneficiary name",
+    "nriAccount": "NRI account",
+    "salaryAccount": "Salary account",
+    "savingAccount": "Saving account",
+    "transferLimit": "Transfer limit"
+  },
+  "bottomTab": {
+    "account": "Account",
+    "deposit": "Deposit",
+    "home": "Home",
+    "loans": "Loans",
+    "tapBack": "Tap back again to exit the App"
+  },
+  "changePinScreen": {
+    "changePin": "Change pin",
+    "confirmNewPin": "Confirm your new pin",
+    "confirmPin": "Confirm pin",
+    "currentPin": "Current pin",
+    "enterCurrentPin": "Enter current pin",
+    "enterNewPin": "Enter new pin",
+    "newPin": "New pin",
+    "reset": "Reset"
+  },
+  "customerSupportScreen": {
+    "customerSupport": "Customer support",
+    "email": "Email address",
+    "enterEmail": "Enter your email address",
+    "enterMessage": "Enter message",
+    "enterName": "Enter your name",
+    "message": "Message",
+    "name": "Name",
+    "submit": "Submit",
+    "weAreHere": "We are here to help so please get in touch with us."
+  },
+  "depositScreen": {
+    "completed": "Completed",
+    "completedDeposit": "Completed deposit",
+    "currentDeposit": "Current deposit",
+    "deposit": "Deposit",
+    "depositTo": "Deposit to:",
+    "pending": "Pending",
+    "rate": "Rate:",
+    "status": "Status:"
+  },
+  "editProfileScreen": {
+    "camera": "Camera",
+    "changeProfile": "Upload image",
+    "deny": "You has denied to access Camera!!!",
+    "editProfile": "Edit profile",
+    "email": "Email address",
+    "enterEmail": "Enter your email address",
+    "enterMobile": "Enter your phone number",
+    "enterName": "Enter your name",
+    "gallery": "Gallery",
+    "mobile": "Phone number",
+    "name": "Name",
+    "ok": "Ok",
+    "remove": "Remove",
+    "removeImage": "Profile photo removed.",
+    "update": "Update"
+  },
+  "educationLoanModal": {
+    "educationLoan": "Education loan",
+    "okay": "Okay",
+    "thankYou": "Thank you for interested education loan we will contact soon "
+  },
+  "educationLoanScreen": {
+    "description": "Lorem ipsum dolor sit amet consectetur. Doxposueretellus za volutpat aliquam vestibulum accumsan ipsuodignissim nulla elementum orci a dictumst. Magna placerat xmorbiuf pharetra viverra. Nunc fames scelerisque ac faucibuxmattis tristique tellus. Sed ultricies massa lacus sagittntegelorem. At quisque semper sit aliquet proidiasollicitudinvulputate. ",
+    "educationLoan": "Education loan",
+    "enterNumber": "Enter your phone number",
+    "interested": "I am interested",
+    "makeEducation": "Make education your top priority ",
+    "message": "Message",
+    "phoneNumber": "Phone number",
+    "writeMessage": "Write your message"
+  },
+  "fundTransferScreen": {
+    "beneficiaryPay": "Beneficiary pay ",
+    "fundTransfer": "Fund transfer",
+    "pay": "IMPS pay ",
+    "payment": "IBAN payment ",
+    "transferNow": "Transfer now"
+  },
+  "homeScreen": {
+    "account": "Account",
+    "billPay": "Bill pay",
+    "fundTransfer": "Fund transfer",
+    "more": "More",
+    "savingAccount": "Saving account",
+    "scan": "Scan and pay",
+    "seeAll": "See all",
+    "services": "Services",
+    "statement": "Statement",
+    "totalBalance": "Total Balance",
+    "transaction": "Latest transaction"
+  },
+  "languageScreen": {
+    "language": "Language",
+    "update": "Update "
+  },
+  "latestTransactionScreen": {
+    "transaction": "Transaction"
+  },
+  "loader": {
+    "pleaseWait": "Please wait"
+  },
+  "loansScreen": {
+    "applyNow": "Apply now",
+    "carLoan": "Car loan",
+    "currentLoans": "Current loans",
+    "dreamCar": "Buy your dream car",
+    "eMI": "EMI",
+    "homeLoan": "Home loan",
+    "loans": "Loans",
+    "lowestInterest": "Lowest interest rate",
+    "makeEducation": "Make education your top priority ",
+    "period": "Period",
+    "rate": "Rate",
+    "theRightChoiceCar": "The right choice to finance your car ",
+    "viewStatement": "View statement"
+  },
+  "loansStatementScreen": {
+    "eMI": "EMI",
+    "period": "Period",
+    "rate": "Rate",
+    "recentTransaction": "Recent transaction",
+    "statement": "statement"
+  },
+  "loginScreen": {
+    "close": "Close",
+    "happy": "We are happy to see you again",
+    "login": "Login",
+    "mobileNumber": "Enter your mobile number",
+    "search": "Search",
+    "tapBack": "Tap back again to exit the App",
+    "welcomeBack": "Welcome back"
+  },
+  "logoutModal": {
+    "areYouSure": "Are you sur you want to logout?",
+    "cancel": "Cancel",
+    "logout": "Logout",
+    "yes": "Yes"
+  },
+  "nearByScreen": {
+    "direction": "Direction",
+    "nearbyBank": "Nearby bank ",
+    "youAreHere": "You are here"
+  },
+  "notificationScreen": {
+    "noNotification": "No new notification",
+    "notification": "Notification",
+    "remove": "Notification removed."
+  },
+  "onboardingScreen": {
+    "description": "Lorem ipsum dolor sit amet consectetur. Viverra impretium elementum morbi. Quis id placerat tempor element Aliquet sit consequat quis tellus. ",
+    "skip": "Skip",
+    "tapBack": "Tap back again to exit the App",
+    "title1": "Safe and fast banking operations",
+    "title2": "Manage your money wisely",
+    "title3": "Find bank and atm around you"
+  },
+  "otpScreen": {
+    "pleaseEnter": "Otp has been sent to you on your mobile number please enter it below ",
+    "resend": "Resend",
+    "verification": "OTP verification",
+    "verify": "Verify"
+  },
+  "payIMPSScreen": {
+    "accountNo": "Enter account no",
+    "amount": "Amount",
+    "bankName": "Bank name",
+    "currentAccount": "Current account",
+    "enterAccountNo": "Enter account no",
+    "enterAmount": "Enter amount",
+    "enterHolderName": "Enter account holder name",
+    "enterICode": "Enter IFSC code",
+    "fromAccount": "From account",
+    "hBank": "HDFC bank",
+    "holderName": "Account holder name",
+    "iCode": "IFSC code",
+    "nriAccount": "NRI account",
+    "salaryAccount": "Salary account",
+    "savingAccount": "Saving account",
+    "toAccount": "To account"
+  },
+  "paymentIBANScreen": {
+    "amount": "Amount",
+    "bank": "Beneficiary bank",
+    "beneficiaryInfo": "Beneficiary info",
+    "code": "BIC code",
+    "currentAccount": "Current account",
+    "fromAccount": "From account",
+    "name": "Beneficiary name",
+    "nriAccount": "NRI account",
+    "number": "IBAN number",
+    "remark": "Remark",
+    "salaryAccount": "Salary account",
+    "savingAccount": "Saving account"
+  },
+  "pinScreen": {
+    "continue": "Continue",
+    "enterDigit": "Leslie Alexander enter 4 digit pin ",
+    "enterPin": "Enter pin",
+    "welcome": "Welcome"
+  },
+  "privacyPolicyScreen": {
+    "mainDescription": "Lorem ipsum dolor sit amet consectetur. Doxposueretellus za volutpat aliquam vestibulum accumsan ipsuodignissim nulla elementum orci a dictumst. Magna placerat xmorbiuf pharetra viverra. Nunc fames scelerisque ac faucibuxmattis tristique tellus. Sed ultricies massa lacus sagittntegelorem. At quisque semper sit aliquet proidiasollicitudinvulputate.Lorem ipsum dolor sit amet consectetur.Dolposueretellus a volutpat aliquam vestibulum accumsan ipsuTodignissim nulla elementum orci a dictumst.Magna placerat vmorbiuf pharetra viverra.Nunc fames scelerisque ac faucibuszattis tristique tellus.Sed ultricies massa lacus sagitintegelorem.At quisque semper sit aliquet proidiasollicitudinvulputate.Tellus elementum ut ut morbi nunc lacus et.",
+    "privacyPolicy": "Privacy policy",
+    "subDescription": "Lorem ipsum dolor sit amet consectetur. Doxposueretellus za volutpat aliquam vestibulum accumsan ipsuodignissim nulla elementum orci a dictumst. Magna placerat xmorbiuf pharetra viverra. Nunc fames scelerisque ac faucibuxmattis tristique tellus. Sed ultricies massa lacus sagittntegelorem. At quisque semper sit aliquet proidiasollicitudinvulputate. "
+  },
+  "registerScreen": {
+    "email": "Enter your email address",
+    "name": "Enter your name",
+    "number": "Enter your mobile number",
+    "register": "Register"
+  },
+  "servicesScreen": {
+    "account": "Account",
+    "billPay": "Bill pay",
+    "cards": "Cards",
+    "deposit": "Deposit",
+    "fundTransfer": "Fund transfer",
+    "insurance": "Insurance",
+    "loans": "Loans",
+    "mutualFund": "Mutual fund",
+    "recharge": "Recharge",
+    "scan": "Scan and pay",
+    "services": "Services",
+    "shopOffer": "Shop & offer",
+    "statement": "Statement"
+  },
+  "statementScreen": {
+    "cancel": "Cancel",
+    "currentAccount": "Current account",
+    "go": "Go",
+    "nriAccount": "NRI account ",
+    "ok": "okay",
+    "salaryAccount": "Salary account",
+    "savingAccount": "Saving account",
+    "selectDate": "Select date",
+    "statement": "Statement",
+    "totalBalance": "Total balance",
+    "transaction": "Transaction result"
+  },
+  "successDepositModal": {
+    "congratulation": "Congratulation your $1000 successfully deposited for 18 month",
+    "okay": "Okay",
+    "success": "Success"
+  },
+  "successfullyScreen": {
+    "amount": "Amount",
+    "backToHome": "Back to home",
+    "from": "From",
+    "paymentMode": "Payment mode",
+    "remark": "Remark",
+    "successfully": "Transfer successfully",
+    "transferred": "Transferred to"
+  },
+  "termsConditionScreen": {
+    "mainDescription": "Lorem ipsum dolor sit amet consectetur. Doxposueretellus za volutpat aliquam vestibulum accumsan ipsuodignissim nulla elementum orci a dictumst. Magna placerat xmorbiuf pharetra viverra. Nunc fames scelerisque ac faucibuxmattis tristique tellus. Sed ultricies massa lacus sagittntegelorem. At quisque semper sit aliquet proidiasollicitudinvulputate.Lorem ipsum dolor sit amet consectetur.Dolposueretellus a volutpat aliquam vestibulum accumsan ipsuTodignissim nulla elementum orci a dictumst.Magna placerat vmorbiuf pharetra viverra.Nunc fames scelerisque ac faucibuszattis tristique tellus.Sed ultricies massa lacus sagitintegelorem.At quisque semper sit aliquet proidiasollicitudinvulputate.Tellus elementum ut ut morbi nunc lacus et.",
+    "subDescription": "Lorem ipsum dolor sit amet consectetur. Doxposueretellus za volutpat aliquam vestibulum accumsan ipsuodignissim nulla elementum orci a dictumst. Magna placerat xmorbiuf pharetra viverra. Nunc fames scelerisque ac faucibuxmattis tristique tellus. Sed ultricies massa lacus sagittntegelorem. At quisque semper sit aliquet proidiasollicitudinvulputate. ",
+    "termsAndCondition": "Terms and condition"
+  }
 }

@@ -3,6 +3,7 @@ import '../../global.css';
 
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import { ThemeProvider } from '@react-navigation/native';
+import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import React from 'react';
@@ -32,12 +33,24 @@ SplashScreen.setOptions({
 });
 
 export default function RootLayout() {
+  const [fontsLoaded, fontError] = useFonts({
+    Inter: require('../../assets/fonts/Inter.ttf'),
+    NunitoSans_Bold: require('../../assets/fonts/NunitoSans-Bold.ttf'),
+    NunitoSans_SemiBold: require('../../assets/fonts/NunitoSans-SemiBold.ttf'),
+    NunitoSans_Regular: require('../../assets/fonts/NunitoSans-Regular.ttf'),
+    NunitoSans_ExtraBold: require('../../assets/fonts/NunitoSans-ExtraBold.ttf'),
+  });
+
+  if (!fontsLoaded && !fontError) {
+    return null;
+  }
+
   return (
     <Providers>
       <Stack>
         <Stack.Screen name="(app)" options={{ headerShown: false }} />
         <Stack.Screen name="onboarding" options={{ headerShown: false }} />
-        <Stack.Screen name="login" options={{ headerShown: false }} />
+        <Stack.Screen name="auth/login" options={{ headerShown: false }} />
       </Stack>
     </Providers>
   );

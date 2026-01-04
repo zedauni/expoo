@@ -1,54 +1,201 @@
+import { Ionicons } from '@expo/vector-icons';
+import { useFocusEffect } from '@react-navigation/native';
 import { useRouter } from 'expo-router';
-import React from 'react';
-
-import { Cover } from '@/components/cover';
+import React, { useCallback, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
-  Button,
-  FocusAwareStatusBar,
-  SafeAreaView,
+  BackHandler,
+  Dimensions,
+  FlatList,
+  Image,
+  type ImageSourcePropType,
+  type NativeScrollEvent,
+  type NativeSyntheticEvent,
+  Platform,
   Text,
+  TouchableOpacity,
   View,
-} from '@/components/ui';
-import { useIsFirstTime } from '@/lib/hooks';
-export default function Onboarding() {
-  const [_, setIsFirstTime] = useIsFirstTime();
-  const router = useRouter();
-  return (
-    <View className="flex h-full items-center  justify-center">
-      <FocusAwareStatusBar />
-      <View className="w-full flex-1">
-        <Cover />
-      </View>
-      <View className="justify-end ">
-        <Text className="my-3 text-center text-5xl font-bold">
-          Obytes Starter
-        </Text>
-        <Text className="mb-2 text-center text-lg text-gray-600">
-          The right way to build your mobile app
-        </Text>
+} from 'react-native';
+import { showMessage } from 'react-native-flash-message';
 
-        <Text className="my-1 pt-6 text-left text-lg">
-          🚀 Production-ready{' '}
-        </Text>
-        <Text className="my-1 text-left text-lg">
-          🥷 Developer experience + Productivity
-        </Text>
-        <Text className="my-1 text-left text-lg">
-          🧩 Minimal code and dependencies
-        </Text>
-        <Text className="my-1 text-left text-lg">
-          💪 well maintained third-party libraries
-        </Text>
+import MyStatusBar from '@/components/my-status-bar';
+import colors from '@/components/ui/colors';
+import images from '@/constants/images';
+
+const { width } = Dimensions.get('window');
+
+const OnboardingScreen = () => {
+  const router = useRouter();
+  const { t } = useTranslation();
+  const [exitApp, setExitApp] = useState(0);
+
+  useFocusEffect(
+    useCallback(() => {
+      const backAction = () => {
+        if (Platform.OS === 'android') {
+          setTimeout(() => {
+            setExitApp(0);
+          }, 2000);
+
+          if (exitApp === 0) {
+            setExitApp(exitApp + 1);
+            showMessage({
+              message: t('onboardingScreen.tapBack'),
+              type: 'info',
+              backgroundColor: colors.darkGrey,
+            });
+          } else if (exitApp === 1) {
+            BackHandler.exitApp();
+          }
+          return true;
+        }
+      };
+      const subscription = BackHandler.addEventListener(
+        'hardwareBackPress',
+        backAction
+      );
+      return () => {
+        subscription.remove();
+      };
+    }, [exitApp, t])
+  );
+
+  interface OnboardingSlide {
+    id: string;
+    image: ImageSourcePropType;
+    title: string;
+    subtitle: string;
+  }
+
+  const onboardingSlides: OnboardingSlide[] = [
+    {
+      id: '1',
+      image: images.onboarding1,
+      title: t('onboardingScreen.title1'),
+      subtitle: t('onboardingScreen.description'),
+    },
+    {
+      id: '2',
+      image: images.onboarding2,
+      title: t('onboardingScreen.title2'),
+      subtitle: t('onboardingScreen.description'),
+    },
+    {
+      id: '3',
+      image: images.onboarding3,
+      title: t('onboardingScreen.title3'),
+      subtitle: t('onboardingScreen.description'),
+    },
+  ];
+
+  const renderItemSlides = ({ item }: { item: OnboardingSlide }) => {
+    return (
+      <View className="flex-1 items-center" style={{ width }}>
+        <View className="flex-[8] items-center justify-center">
+          <Image
+            source={item.image}
+            resizeMode="contain"
+            className="size-[294px]"
+          />
+        </View>
+        <View className="mx-5 flex-[2] items-center justify-center">
+          <Text className="font-inter text-xl font-bold text-black">
+            {item.title}
+          </Text>
+          <Text className="mt-2.5 text-center font-inter text-sm font-semibold text-grey">
+            {item.subtitle}
+          </Text>
+        </View>
       </View>
-      <SafeAreaView className="mt-6">
-        <Button
-          label="Let's Get Started "
+    );
+  };
+
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const ref = useRef<FlatList>(null);
+
+  const updateCurrentSlideIndex = (
+    e: NativeSyntheticEvent<NativeScrollEvent>
+  ) => {
+    const contentOffsetX = e.nativeEvent.contentOffset.x;
+    const currentIndex = Math.round(contentOffsetX / width);
+    setCurrentSlideIndex(currentIndex);
+  };
+
+  const goToNextSlide = () => {
+    const nextSlideIndex = currentSlideIndex + 1;
+    if (nextSlideIndex !== onboardingSlides.length) {
+      const offset = nextSlideIndex * width;
+      ref?.current?.scrollToOffset({ offset });
+      setCurrentSlideIndex(currentSlideIndex + 1);
+    }
+  };
+
+  const ListFooterComponent = () => {
+    return (
+      <View className="mx-5 mb-4 mt-12 flex-row items-center justify-between">
+        <TouchableOpacity
+          disabled={currentSlideIndex === onboardingSlides.length - 1}
+          onPress={() => router.push('/auth/login')}
+        >
+          <Text
+            numberOfLines={1}
+            className={`text-sm font-bold ${
+              currentSlideIndex === onboardingSlides.length - 1
+                ? 'text-transparent'
+                : 'text-grey'
+            }`}
+          >
+            {t('onboardingScreen.skip')}
+          </Text>
+        </TouchableOpacity>
+        <View className="flex-row items-center justify-center">
+          {onboardingSlides.map((_, index) => (
+            <View
+              key={index}
+              className={`mx-1 size-2.5 rounded-full ${
+                currentSlideIndex === index
+                  ? 'h-2 w-9 rounded-[5px] bg-primary'
+                  : 'bg-lightGrey'
+              }`}
+            />
+          ))}
+        </View>
+
+        <TouchableOpacity
           onPress={() => {
-            setIsFirstTime(false);
-            router.replace('/login');
+            if (currentSlideIndex === onboardingSlides.length - 1) {
+              router.push('/auth/login');
+            } else {
+              goToNextSlide();
+            }
           }}
+          className="size-14 items-center justify-center rounded-full border-2 border-dotted border-lightPrimary"
+        >
+          <View className="size-[46px] items-center justify-center rounded-full bg-primary">
+            <Ionicons name="arrow-forward" size={25} color={colors.white} />
+          </View>
+        </TouchableOpacity>
+      </View>
+    );
+  };
+
+  return (
+    <View className="flex-1">
+      <MyStatusBar />
+      <View className="flex-1 bg-white">
+        <FlatList
+          ref={ref}
+          horizontal
+          pagingEnabled
+          data={onboardingSlides}
+          renderItem={renderItemSlides}
+          onMomentumScrollEnd={updateCurrentSlideIndex}
+          showsHorizontalScrollIndicator={false}
         />
-      </SafeAreaView>
+        <ListFooterComponent />
+      </View>
     </View>
   );
-}
+};
+
+export default OnboardingScreen;

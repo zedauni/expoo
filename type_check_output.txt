@@ -1,0 +1,163 @@
+$ tsc --noemit
+node_modules/react-native-btr/src/Components/CheckBox.tsx(3,18): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/MaterialIcons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/MaterialIcons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/MaterialIcons';`
+node_modules/react-native-btr/src/Components/CollapsibleCard.tsx(3,18): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/MaterialIcons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/MaterialIcons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/MaterialIcons';`
+node_modules/react-native-btr/src/Components/CollapsibleCard.tsx(16,19): error TS2694: Namespace 'React' has no exported member 'ReactChild'.
+node_modules/react-native-btr/src/Components/CollapsibleCard.tsx(16,38): error TS2694: Namespace 'React' has no exported member 'ReactChild'.
+node_modules/react-native-btr/src/Components/ColorPicker.tsx(3,18): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/MaterialIcons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/MaterialIcons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/MaterialIcons';`
+node_modules/react-native-btr/src/Components/IconPicker.tsx(18,8): error TS7016: Could not find a declaration file for module 'react-native-vector-icons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/dist/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons';`
+node_modules/react-native-btr/src/Components/ModalInput.tsx(18,19): error TS2694: Namespace 'React' has no exported member 'ReactChild'.
+node_modules/react-native-btr/src/Components/ModalInput.tsx(18,38): error TS2694: Namespace 'React' has no exported member 'ReactChild'.
+node_modules/react-native-btr/src/Components/Tag.tsx(3,18): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/MaterialIcons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/MaterialIcons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/MaterialIcons';`
+old-app/app/(tabs)/_layout.tsx(5,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/(tabs)/_layout.tsx(43,21): error TS2339: Property 'removeEventListener' does not exist on type 'BackHandlerStatic'.
+old-app/app/(tabs)/_layout.tsx(73,14): error TS2322: Type '{ android_ripple: { color: string; }; id?: string | undefined; children: (((string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<...> | ReactPortal | Promise<...> | ((state: PressableStateCallbackType) => ReactNode)) & (string | ... 6 more ... | Promise<...>)) & ...' is not assignable to type 'RefAttributes<View>'.
+  Types of property 'ref' are incompatible.
+    Type 'Ref<View | LegacyRef<View>> | undefined' is not assignable to type 'Ref<View> | undefined'.
+      Type 'RefObject<View | LegacyRef<View> | null>' is not assignable to type 'Ref<View> | undefined'.
+        Type 'RefObject<View | LegacyRef<View> | null>' is not assignable to type 'RefObject<View | null>'.
+          Type 'View | LegacyRef<View> | null' is not assignable to type 'View | null'.
+            Type 'LegacyRef<View>' is not assignable to type 'NativeMethods & ViewComponent'.
+              Type 'LegacyRef<View>' is missing the following properties from type 'NativeMethods': measure, measureInWindow, measureLayout, setNativeProps, and 2 more.
+old-app/app/(tabs)/account/accountScreen.tsx(14,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Octicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Octicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Octicons';`
+old-app/app/(tabs)/account/accountScreen.tsx(15,21): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Feather'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Feather.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Feather';`
+old-app/app/(tabs)/account/accountScreen.tsx(16,36): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/MaterialCommunityIcons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/MaterialCommunityIcons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/MaterialCommunityIcons';`
+old-app/app/(tabs)/account/accountScreen.tsx(17,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Fontisto'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Fontisto.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Fontisto';`
+old-app/app/(tabs)/account/accountScreen.tsx(18,23): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/AntDesign'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/AntDesign.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/AntDesign';`
+old-app/app/(tabs)/deposit/depositScreen.tsx(14,27): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/MaterialIcons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/MaterialIcons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/MaterialIcons';`
+old-app/app/(tabs)/home/homeScreen.tsx(14,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/accountDetail/accountDetailScreen.tsx(11,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/addDeposit/addDepositScreen.tsx(14,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/auth/loginScreen.tsx(17,28): error TS7016: Could not find a declaration file for module 'react-native-intl-phone-input'. '/home/z/tempo/t1/expoo/node_modules/react-native-intl-phone-input/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-intl-phone-input` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-intl-phone-input';`
+old-app/app/auth/loginScreen.tsx(59,21): error TS2339: Property 'removeEventListener' does not exist on type 'BackHandlerStatic'.
+old-app/app/auth/otpScreen.tsx(16,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/auth/pinScreen.tsx(16,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/auth/registerScreen.tsx(17,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/auth/registerScreen.tsx(18,21): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Feather'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Feather.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Feather';`
+old-app/app/changePin/changePinScreen.tsx(12,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/customerSupport/customerSupportScreen.tsx(13,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/editProfile/editProfileScreen.tsx(13,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/editProfile/editProfileScreen.tsx(17,30): error TS2307: Cannot find module 'expo-image-picker' or its corresponding type declarations.
+old-app/app/educationLoan/educationLoanScreen.tsx(14,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/fundTransfer/fundTransferScreen.tsx(14,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/language/languageScreen.tsx(11,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/language/languageScreen.tsx(13,26): error TS2307: Cannot find module '@react-native-async-storage/async-storage' or its corresponding type declarations.
+old-app/app/language/languageScreen.tsx(14,36): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/MaterialCommunityIcons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/MaterialCommunityIcons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/MaterialCommunityIcons';`
+old-app/app/latestTransaction/latestTransactionScreen.tsx(5,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/loansStatement/loansStatementScreen.tsx(5,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/nearBy/nearByScreen.tsx(13,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/nearBy/nearByScreen.tsx(14,36): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/MaterialCommunityIcons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/MaterialCommunityIcons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/MaterialCommunityIcons';`
+old-app/app/nearBy/nearByScreen.tsx(15,51): error TS2307: Cannot find module 'react-native-maps' or its corresponding type declarations.
+old-app/app/nearBy/nearByScreen.tsx(337,27): error TS7006: Parameter 'e' implicitly has an 'any' type.
+old-app/app/notification/notificationScreen.tsx(11,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/notification/notificationScreen.tsx(14,36): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/MaterialCommunityIcons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/MaterialCommunityIcons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/MaterialCommunityIcons';`
+old-app/app/onboarding/onboardingScreen.tsx(19,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/onboarding/onboardingScreen.tsx(23,21): error TS2307: Cannot find module '@/languages' or its corresponding type declarations.
+old-app/app/onboarding/onboardingScreen.tsx(62,21): error TS2339: Property 'removeEventListener' does not exist on type 'BackHandlerStatic'.
+old-app/app/privacyPolicy/privacyPolicyScreen.tsx(5,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/services/servicesScreen.tsx(13,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/statement/statementScreen.tsx(17,21): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Feather'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Feather.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Feather';`
+old-app/app/statement/statementScreen.tsx(18,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/statement/statementScreen.tsx(20,36): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/MaterialCommunityIcons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/MaterialCommunityIcons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/MaterialCommunityIcons';`
+old-app/app/successfully/successfullyScreen.tsx(2,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/app/termsCondition/termsConditionScreen.tsx(5,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/components/selectAccountNo.tsx(5,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/components/snackbarToast.tsx(3,26): error TS2307: Cannot find module 'react-native-paper' or its corresponding type declarations.
+old-app/components/successDepositModal.tsx(12,22): error TS7016: Could not find a declaration file for module 'react-native-vector-icons/Ionicons'. '/home/z/tempo/t1/expoo/node_modules/react-native-vector-icons/Ionicons.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-vector-icons` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-vector-icons/Ionicons';`
+old-app/languages/index.ts(3,26): error TS2307: Cannot find module '@react-native-async-storage/async-storage' or its corresponding type declarations.
+old-app/languages/index.ts(18,45): error TS7006: Parameter 'savedDataJSON' implicitly has an 'any' type.
+src/app/(app)/settings.tsx(30,24): error TS2345: Argument of type '"settings.title"' is not assignable to parameter of type 'TxKeyPath'.
+src/app/(app)/settings.tsx(32,27): error TS2322: Type '"settings.generale"' is not assignable to type 'TxKeyPath | undefined'.
+src/app/(app)/settings.tsx(37,27): error TS2322: Type '"settings.about"' is not assignable to type 'TxKeyPath | undefined'.
+src/app/(app)/settings.tsx(38,19): error TS2322: Type '"settings.app_name"' is not assignable to type 'TxKeyPath'.
+src/app/(app)/settings.tsx(39,19): error TS2322: Type '"settings.version"' is not assignable to type 'TxKeyPath'.
+src/app/(app)/settings.tsx(42,27): error TS2322: Type '"settings.support_us"' is not assignable to type 'TxKeyPath | undefined'.
+src/app/(app)/settings.tsx(44,15): error TS2322: Type '"settings.share"' is not assignable to type 'TxKeyPath'.
+src/app/(app)/settings.tsx(49,15): error TS2322: Type '"settings.rate"' is not assignable to type 'TxKeyPath'.
+src/app/(app)/settings.tsx(54,15): error TS2322: Type '"settings.support"' is not assignable to type 'TxKeyPath'.
+src/app/(app)/settings.tsx(60,27): error TS2322: Type '"settings.links"' is not assignable to type 'TxKeyPath | undefined'.
+src/app/(app)/settings.tsx(61,19): error TS2322: Type '"settings.privacy"' is not assignable to type 'TxKeyPath'.
+src/app/(app)/settings.tsx(62,19): error TS2322: Type '"settings.terms"' is not assignable to type 'TxKeyPath'.
+src/app/(app)/settings.tsx(64,15): error TS2322: Type '"settings.github"' is not assignable to type 'TxKeyPath'.
+src/app/(app)/settings.tsx(69,15): error TS2322: Type '"settings.website"' is not assignable to type 'TxKeyPath'.
+src/app/(app)/settings.tsx(77,21): error TS2322: Type '"settings.logout"' is not assignable to type 'TxKeyPath'.
+src/app/(tabs)/_layout.tsx(8,8): error TS1192: Module '"/home/z/tempo/t1/expoo/src/constants/images"' has no default export.
+src/app/(tabs)/_layout.tsx(36,12): error TS2322: Type '{ android_ripple: { color: string; }; id?: string | undefined; children: (((string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<...> | ReactPortal | Promise<...> | ((state: PressableStateCallbackType) => ReactNode)) & (string | ... 6 more ... | Promise<...>)) & ...' is not assignable to type 'RefAttributes<View>'.
+  Types of property 'ref' are incompatible.
+    Type 'Ref<View | LegacyRef<View>> | undefined' is not assignable to type 'Ref<View> | undefined'.
+      Type 'RefObject<View | LegacyRef<View> | null>' is not assignable to type 'Ref<View> | undefined'.
+        Type 'RefObject<View | LegacyRef<View> | null>' is not assignable to type 'RefObject<View | null>'.
+          Type 'View | LegacyRef<View> | null' is not assignable to type 'View | null'.
+            Type 'LegacyRef<View>' is not assignable to type 'NativeMethods & ViewComponent'.
+              Type 'LegacyRef<View>' is missing the following properties from type 'NativeMethods': measure, measureInWindow, measureLayout, setNativeProps, and 2 more.
+src/app/(tabs)/account/index.tsx(24,8): error TS1192: Module '"/home/z/tempo/t1/expoo/src/constants/images"' has no default export.
+src/app/(tabs)/account/index.tsx(180,15): error TS2820: Type '"customerservice"' is not assignable to type '"number" | "function" | "left" | "right" | "filter" | "code" | "message" | "notification" | "android" | "translation" | "search" | "bold" | "link" | "audio" | "form" | "menu" | ... 433 more ... | undefined'. Did you mean '"customer-service"'?
+src/app/(tabs)/deposit/index.tsx(18,8): error TS1192: Module '"/home/z/tempo/t1/expoo/src/constants/images"' has no default export.
+src/app/(tabs)/home/index.tsx(18,8): error TS1192: Module '"/home/z/tempo/t1/expoo/src/constants/images"' has no default export.
+src/app/(tabs)/loans/index.tsx(19,8): error TS1192: Module '"/home/z/tempo/t1/expoo/src/constants/images"' has no default export.
+src/app/auth/login.tsx(18,28): error TS7016: Could not find a declaration file for module 'react-native-intl-phone-input'. '/home/z/tempo/t1/expoo/node_modules/react-native-intl-phone-input/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-native-intl-phone-input` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-native-intl-phone-input';`
+src/app/auth/login.tsx(23,8): error TS1192: Module '"/home/z/tempo/t1/expoo/src/constants/images"' has no default export.
+src/app/auth/login.tsx(56,21): error TS2339: Property 'removeEventListener' does not exist on type 'BackHandlerStatic'.
+src/app/auth/otp.tsx(21,8): error TS1192: Module '"/home/z/tempo/t1/expoo/src/constants/images"' has no default export.
+src/app/auth/pin.tsx(21,8): error TS1192: Module '"/home/z/tempo/t1/expoo/src/constants/images"' has no default export.
+src/app/auth/register.tsx(21,8): error TS1192: Module '"/home/z/tempo/t1/expoo/src/constants/images"' has no default export.
+src/app/onboarding.tsx(23,8): error TS1192: Module '"/home/z/tempo/t1/expoo/src/constants/images"' has no default export.
+src/app/onboarding.tsx(55,21): error TS2339: Property 'removeEventListener' does not exist on type 'BackHandlerStatic'.
+src/app/services/services.tsx(17,8): error TS1192: Module '"/home/z/tempo/t1/expoo/src/constants/images"' has no default export.
+src/components/settings/language-item.tsx(23,26): error TS2345: Argument of type '"settings.english"' is not assignable to parameter of type 'TxKeyPath'.
+src/components/settings/language-item.tsx(24,26): error TS2345: Argument of type '"settings.arabic"' is not assignable to parameter of type 'TxKeyPath'.
+src/components/settings/language-item.tsx(37,9): error TS2322: Type '"settings.language"' is not assignable to type 'TxKeyPath'.
+src/components/settings/theme-item.tsx(24,29): error TS2345: Argument of type '"settings.theme.dark"' is not assignable to parameter of type 'TxKeyPath'.
+src/components/settings/theme-item.tsx(25,29): error TS2345: Argument of type '"settings.theme.light"' is not assignable to parameter of type 'TxKeyPath'.
+src/components/settings/theme-item.tsx(26,29): error TS2345: Argument of type '"settings.theme.system"' is not assignable to parameter of type 'TxKeyPath'.
+src/components/settings/theme-item.tsx(39,9): error TS2322: Type '"settings.theme.title"' is not assignable to type 'TxKeyPath'.
+src/components/ui/checkbox.tsx(75,56): error TS2339: Property 'charcoal' does not exist on type '{ white: string; black: string; primary: string; lightPrimary: string; transparent: string; transparentBlack: string; grey: string; darkGrey: string; lightGrey: string; regularGrey: string; extraLightRegularGrey: string; ... 13 more ...; warning: { ...; }; }'.
+src/components/ui/checkbox.tsx(146,56): error TS2339: Property 'charcoal' does not exist on type '{ white: string; black: string; primary: string; lightPrimary: string; transparent: string; transparentBlack: string; grey: string; darkGrey: string; lightGrey: string; regularGrey: string; extraLightRegularGrey: string; ... 13 more ...; warning: { ...; }; }'.
+src/components/ui/checkbox.tsx(206,66): error TS2339: Property 'charcoal' does not exist on type '{ white: string; black: string; primary: string; lightPrimary: string; transparent: string; transparentBlack: string; grey: string; darkGrey: string; lightGrey: string; regularGrey: string; extraLightRegularGrey: string; ... 13 more ...; warning: { ...; }; }'.
+src/lib/use-theme-config.tsx(15,24): error TS2339: Property 'charcoal' does not exist on type '{ white: string; black: string; primary: string; lightPrimary: string; transparent: string; transparentBlack: string; grey: string; darkGrey: string; lightGrey: string; regularGrey: string; extraLightRegularGrey: string; ... 13 more ...; warning: { ...; }; }'.
+src/lib/use-theme-config.tsx(16,18): error TS2339: Property 'charcoal' does not exist on type '{ white: string; black: string; primary: string; lightPrimary: string; transparent: string; transparentBlack: string; grey: string; darkGrey: string; lightGrey: string; regularGrey: string; extraLightRegularGrey: string; ... 13 more ...; warning: { ...; }; }'.
+src/lib/use-theme-config.tsx(17,20): error TS2339: Property 'charcoal' does not exist on type '{ white: string; black: string; primary: string; lightPrimary: string; transparent: string; transparentBlack: string; grey: string; darkGrey: string; lightGrey: string; regularGrey: string; extraLightRegularGrey: string; ... 13 more ...; warning: { ...; }; }'.
+src/lib/use-theme-config.tsx(18,18): error TS2339: Property 'charcoal' does not exist on type '{ white: string; black: string; primary: string; lightPrimary: string; transparent: string; transparentBlack: string; grey: string; darkGrey: string; lightGrey: string; regularGrey: string; extraLightRegularGrey: string; ... 13 more ...; warning: { ...; }; }'.
