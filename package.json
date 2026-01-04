@@ -80,6 +80,7 @@
     "react-native-gesture-handler": "~2.24.0",
     "react-native-intl-phone-input": "^1.2.27",
     "react-native-keyboard-controller": "^1.17.4",
+    "react-native-maps": "1.20.1",
     "react-native-mmkv": "~3.1.0",
     "react-native-otp-entry": "^1.8.5",
     "react-native-paper": "^5.14.5",
@@ -94,8 +95,7 @@
     "react-query-kit": "^3.3.0",
     "tailwind-variants": "^0.2.1",
     "zod": "^3.23.8",
-    "zustand": "^5.0.5",
-    "react-native-maps": "^1.26.20"
+    "zustand": "^5.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
