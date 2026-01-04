@@ -86,18 +86,6 @@ const NearByScreen = () => {
     },
   ];
 
-  // NOTE: Assets need to be handled.
-  // Assuming they are in `old-app/assets/images/` and I should move them to `assets/images` or `src/assets`.
-  // Or I can copy them to `src/assets/images` if they are not there.
-  // For now I will point to them assuming they exist at that relative path or I will fix shortly.
-  // Wait, `../../../assets/images` implies `src/app/nearby/../../../assets/images` -> `src/assets/images`? No.
-  // `src/app/nearby` -> `src/app` -> `src` -> root.
-  // The original code was `../../assets/images`. `app/nearBy` -> `app` -> `old-app/assets`?
-  // Let's check where the assets are later. For now I will use placeholders or try to point to where I think they are.
-  // Actually I should probably add them to `src/constants/images.ts` if they are important.
-  // But these are require() calls inline.
-  // I'll stick to migrating logic first.
-
   const initialMapData = {
     latitude: 22.62938671242907,
     longitude: 88.4354486029795,
