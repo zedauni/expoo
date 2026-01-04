@@ -27,77 +27,86 @@ const NearByScreen = () => {
   const { t, i18n } = useTranslation();
   const isRtl = i18n.dir() === 'rtl';
 
-  function tr(key: string) {
-    return t(`nearByScreen.${key}`);
-  }
+  const tr = React.useCallback(
+    (key: string) => {
+      return t(`nearByScreen.${key}`);
+    },
+    [t]
+  );
 
   const _map = useRef<MapView>(null);
   const _scrollView = useRef<any>(null); // Animated.ScrollView doesn't have perfect types exported sometimes
   const regionTimeout = useRef<any>(null);
 
-  const nearByData = [
-    {
-      key: '1',
-      title: 'Star Bank',
-      title2: 'Star Bank ATM',
-      image: images.mapImage1,
-      address: '2464 Royal Ln. Mesa,New  45463',
-      min: '20 min',
-      coordinate: {
-        latitude: 22.6293867,
-        longitude: 88.4254486,
+  const nearByData = React.useMemo(
+    () => [
+      {
+        key: '1',
+        title: 'Star Bank',
+        title2: 'Star Bank ATM',
+        image: images.mapImage1,
+        address: '2464 Royal Ln. Mesa,New  45463',
+        min: '20 min',
+        coordinate: {
+          latitude: 22.6293867,
+          longitude: 88.4254486,
+        },
+        coordinateATM: {
+          latitude: 22.6393867,
+          longitude: 88.4454486,
+        },
       },
-      coordinateATM: {
-        latitude: 22.6393867,
-        longitude: 88.4454486,
+      {
+        key: '2',
+        title: 'Star Bank',
+        title2: 'Star Bank ATM',
+        image: images.mapImage2,
+        address: '1901  Cir.Shiloh,Hawaii 81063',
+        min: '1.4 km',
+        coordinate: {
+          latitude: 22.6345648,
+          longitude: 88.4377279,
+        },
+        coordinateATM: {
+          latitude: 22.6365648,
+          longitude: 88.4277279,
+        },
       },
-    },
-    {
-      key: '2',
-      title: 'Star Bank',
-      title2: 'Star Bank ATM',
-      image: images.mapImage2,
-      address: '1901  Cir.Shiloh,Hawaii 81063',
-      min: '1.4 km',
-      coordinate: {
-        latitude: 22.6345648,
-        longitude: 88.4377279,
+      {
+        key: '3',
+        title: 'Star Bank',
+        title2: 'Star Bank ATM',
+        image: images.mapImage3,
+        address: '6391 Elgin St. Celina, 10299',
+        min: '1.4 km',
+        coordinate: {
+          latitude: 22.6281662,
+          longitude: 88.4410113,
+        },
+        coordinateATM: {
+          latitude: 22.6481662,
+          longitude: 88.4410113,
+        },
       },
-      coordinateATM: {
-        latitude: 22.6365648,
-        longitude: 88.4277279,
-      },
-    },
-    {
-      key: '3',
-      title: 'Star Bank',
-      title2: 'Star Bank ATM',
-      image: images.mapImage3,
-      address: '6391 Elgin St. Celina, 10299',
-      min: '1.4 km',
-      coordinate: {
-        latitude: 22.6281662,
-        longitude: 88.4410113,
-      },
-      coordinateATM: {
-        latitude: 22.6481662,
-        longitude: 88.4410113,
-      },
-    },
-  ];
+    ],
+    []
+  );
 
-  const initialMapData = {
-    latitude: 22.62938671242907,
-    longitude: 88.4354486029795,
-    latitudeDelta: 0.04864195044303443,
-    longitudeDelta: 0.040142817690068,
-  };
+  const initialMapData = React.useMemo(
+    () => ({
+      latitude: 22.62938671242907,
+      longitude: 88.4354486029795,
+      latitudeDelta: 0.04864195044303443,
+      longitudeDelta: 0.040142817690068,
+    }),
+    []
+  );
 
-  let mapIndex = 0;
-  let mapAnimation = new Animated.Value(0);
+  const mapIndex = useRef(0);
+  const mapAnimation = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
-    mapAnimation.addListener(({ value }) => {
+    const listenerId = mapAnimation.addListener(({ value }) => {
       let index = Math.floor(value / CARD_WIDTH + 0.3);
       if (index >= nearByData.length) {
         index = nearByData.length - 1;
@@ -109,8 +118,8 @@ const NearByScreen = () => {
       clearTimeout(regionTimeout.current);
 
       regionTimeout.current = setTimeout(() => {
-        if (mapIndex !== index) {
-          mapIndex = index;
+        if (mapIndex.current !== index) {
+          mapIndex.current = index;
           const { coordinate, coordinateATM } = nearByData[index];
           _map.current?.animateToRegion(
             {
@@ -123,7 +132,18 @@ const NearByScreen = () => {
         }
       }, 10);
     });
-  });
+
+    return () => {
+      mapAnimation.removeListener(listenerId);
+    };
+  }, [
+    initialMapData.latitudeDelta,
+    initialMapData.longitudeDelta,
+    mapAnimation,
+    nearByData,
+    title,
+    tr,
+  ]);
 
   const interpolations = nearByData.map((_, index) => {
     const inputRange = [
