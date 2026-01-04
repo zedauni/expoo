@@ -8,7 +8,7 @@
 # Updating  the package manager or Node version here will be reflected in all workflows.
 
 # 👀 Example usage:
-#       - name : 📦 Setup Node + PNPM + install deps
+#       - name : 📦 Setup Node + BUN + install deps
 #         uses: ./.github/actions/setup-node-pnpm-install
 
 name: 'Setup  Node + PNPM + Install Dependencies'
