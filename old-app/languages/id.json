@@ -1,0 +1,318 @@
+{
+    "onboardingScreen": {
+        "title1": "Operasi Perbankan yang Aman dan Cepat",
+        "title2": "Kelola uang Anda dengan bijak",
+        "title3": "Temukan bank dan atm di sekitar Anda",
+        "description": "Lorem ipsum dolor duduk amet, consectetur.Penyakit Elemen Kekaisaran Kartun.Siapa pun yang berinvestasi di elemen pisang adalah masalah paket.",
+        "skip": "Melewati",
+        "tapBack": "Ketuk Kembali Lagi untuk Keluar dari Aplikasi"
+    },
+    "loginScreen": {
+        "login": "Gabung",
+        "welcomeBack": "Selamat Datang kembali",
+        "happy": "Kami senang bertemu denganmu lagi",
+        "mobileNumber": "Masukkan nomor ponsel Anda",
+        "search": "Mencari",
+        "close": "Menutup",
+        "tapBack": "Ketuk Kembali Lagi untuk Keluar dari Aplikasi"
+    },
+    "registerScreen": {
+        "register": "Daftar",
+        "name": "Masukkan nama Anda",
+        "number": "Masukkan nomor ponsel Anda",
+        "email": "Masukkan alamat email Anda"
+    },
+    "otpScreen": {
+        "verification": "Verifikasi OTP",
+        "pleaseEnter": "OTP telah dikirimkan kepada Anda di nomor ponsel Anda, silakan masukkan di bawah ini",
+        "verify": "Memeriksa",
+        "resend": "Ulang"
+    },
+    "pinScreen": {
+        "enterPin": "Masukkan PIN",
+        "welcome": "Selamat datang",
+        "enterDigit": "Leslie Alexander Masukkan pin 4 digit",
+        "continue": "Melanjutkan"
+    },
+    "loader": {
+        "pleaseWait": "Harap tunggu"
+    },
+    "bottomTab": {
+        "home": "Rumah",
+        "deposit": "Menyetorkan",
+        "loans": "Pinjaman",
+        "account": "Akun",
+        "tapBack": "Ketuk Kembali Lagi untuk Keluar dari Aplikasi"
+    },
+    "homeScreen": {
+        "totalBalance": "Total Saldo",
+        "savingAccount": "Tabungan",
+        "services": "Jasa",
+        "account": "Akun",
+        "fundTransfer": "Pengiriman dana",
+        "statement": "Penyataan",
+        "billPay": "Bayar tagihan",
+        "scan": "Pindai dan bayar",
+        "more": "Lagi",
+        "transaction": "Transaksi terbaru",
+        "seeAll": "Lihat semua"
+    },
+    "servicesScreen": {
+        "services": "Jasa",
+        "account": "Akun",
+        "fundTransfer": "Pengiriman dana",
+        "statement": "Penyataan",
+        "billPay": "Bayar tagihan",
+        "scan": "Pindai dan bayar",
+        "deposit": "Menyetorkan",
+        "loans": "Pinjaman",
+        "cards": "Kartu-kartu",
+        "mutualFund": "Reksa dana",
+        "insurance": "Pertanggungan",
+        "shopOffer": "Berbelanja & Menawarkan",
+        "recharge": "Isi ulang"
+    },
+    "latestTransactionScreen": {
+        "transaction": "Transaksi"
+    },
+    "notificationScreen": {
+        "notification": "Pemberitahuan",
+        "remove": "Pemberitahuan dihapus.",
+        "noNotification": "Tidak ada pemberitahuan baru"
+    },
+    "fundTransferScreen": {
+        "fundTransfer": "Pengiriman dana",
+        "beneficiaryPay": "Pembayaran penerima",
+        "payment": "Pembayaran Iban",
+        "pay": "Imps Pay",
+        "transferNow": "Transfer sekarang"
+    },
+    "beneficiaryPayScreen": {
+        "fromAccount": "Dari akun",
+        "beneficiaryInfo": "Info penerima",
+        "name": "Nama Penerima",
+        "bankName": "Nama Bank Penerima",
+        "accountNumber": "Nomor Akun Penerima",
+        "amount": "Jumlah",
+        "transferLimit": "Batas transfer",
+        "savingAccount": "Tabungan",
+        "currentAccount": "Akun saat ini",
+        "salaryAccount": "Akun gaji",
+        "nriAccount": "Akun NRI"
+    },
+    "paymentIBANScreen": {
+        "fromAccount": "Dari akun",
+        "beneficiaryInfo": "Info penerima",
+        "number": "Nomor Iban",
+        "name": "Nama Penerima",
+        "code": "Kode BIC",
+        "bank": "Bank Penerima",
+        "amount": "Jumlah",
+        "remark": "Komentar",
+        "savingAccount": "Tabungan",
+        "currentAccount": "Akun saat ini",
+        "salaryAccount": "Akun gaji",
+        "nriAccount": "Akun NRI"
+    },
+    "payIMPSScreen": {
+        "fromAccount": "Dari akun",
+        "accountNo": "Masukkan akun no",
+        "holderName": "Nama pemilik akun",
+        "enterHolderName": "Masukkan nama pemegang akun",
+        "toAccount": "Ke rekening",
+        "enterAccountNo": "Masukkan akun no",
+        "bankName": "nama Bank",
+        "hBank": "HDFC Bank",
+        "iCode": "Kode ifsc",
+        "enterICode": "Masukkan kode IFSC",
+        "amount": "Jumlah",
+        "enterAmount": "Masukan jumlah",
+        "savingAccount": "Tabungan",
+        "currentAccount": "Akun saat ini",
+        "salaryAccount": "Akun gaji",
+        "nriAccount": "Akun NRI"
+    },
+    "successfullyScreen": {
+        "successfully": "Transfer berhasil",
+        "transferred": "Ditransfer ke",
+        "from": "Dari",
+        "remark": "Komentar",
+        "amount": "Jumlah",
+        "paymentMode": "Mode pembayaran",
+        "backToHome": "Kembali ke rumah"
+    },
+    "accountDetailScreen": {
+        "account": "Akun",
+        "totalBalance": "Total Saldo",
+        "accountNumber": "Nomor akun",
+        "accountDetail": "Detail akun",
+        "cif": "cif",
+        "ifsc": "Ifsc",
+        "branchCode": "Kode cabang",
+        "branchName": "Nama cabang",
+        "openingDate": "Tanggal Pembukaan Akun",
+        "mmid": "Mamid",
+        "currentAccount": "Akun saat ini",
+        "saving": "Tabungan",
+        "salaryAccount": "Akun gaji",
+        "nRIAccount": "Akun NRI",
+        "viewStateMent": "Pernyataan Lihat"
+    },
+    "statementScreen": {
+        "statement": "Penyataan",
+        "totalBalance": "Total Saldo",
+        "selectDate": "Pilih Tanggal",
+        "go": "Pergi",
+        "transaction": "Hasil transaksi",
+        "currentAccount": "Akun saat ini",
+        "savingAccount": "Tabungan",
+        "salaryAccount": "Akun gaji",
+        "nriAccount": "Akun NRI",
+        "cancel": "Membatalkan",
+        "ok": "Oke"
+    },
+    "depositScreen": {
+        "deposit": "Menyetorkan",
+        "currentDeposit": "Setoran saat ini",
+        "depositTo": "Setoran ke:",
+        "status": "status:",
+        "rate": "Kecepatan:",
+        "pending": "Tertunda",
+        "completedDeposit": "Setoran selesai",
+        "completed": "Lengkap"
+    },
+    "addDepositScreen": {
+        "addDeposit": "Tambahkan setoran",
+        "depositPeriod": "Pilih periode setoran",
+        "amount": "Jumlah",
+        "enterDeposit": "Masukkan Jumlah Setoran",
+        "yourRate": "Tarif Anda adalah 8%",
+        "depositTo": "Setoran ke",
+        "selectAmount": "Pilih Akun",
+        "uploadImage": "Unggah gambar cek",
+        "frontSideImage": "Unggah periksa gambar sisi depan",
+        "backSideImage": "Unggah periksa gambar sisi belakang",
+        "depositNow": "Setoran sekarang",
+        "savingAccount": "Tabungan",
+        "currentAccount": "Akun saat ini",
+        "salaryAccount": "Akun gaji",
+        "nriAccount": "Akun NRI"
+    },
+    "successDepositModal": {
+        "success": "Kesuksesan",
+        "congratulation": "Selamat $ 1000 Anda berhasil disetor selama 18 bulan",
+        "okay": "Oke"
+    },
+    "loansScreen": {
+        "loans": "Pinjaman",
+        "makeEducation": "Jadikan Pendidikan Prioritas Anda",
+        "lowestInterest": "Suku bunga terendah",
+        "theRightChoiceCar": "Pilihan yang tepat untuk membiayai mobil Anda",
+        "dreamCar": "Beli Mobil Impian Anda",
+        "applyNow": "Terapkan sekarang",
+        "currentLoans": "Pinjaman saat ini",
+        "period": "Periode",
+        "rate": "Kecepatan",
+        "eMI": "emi",
+        "viewStatement": "Pernyataan Lihat",
+        "homeLoan": "Pinjaman rumah",
+        "carLoan": "Pinjaman mobil"
+    },
+    "loansStatementScreen": {
+        "statement": "penyataan",
+        "period": "Periode",
+        "rate": "Kecepatan",
+        "eMI": "emi",
+        "recentTransaction": "Transaksi terbaru"
+    },
+    "educationLoanScreen": {
+        "educationLoan": "Pinjaman Pendidikan",
+        "makeEducation": "Jadikan Pendidikan Prioritas Anda",
+        "description": "Lorem ipsum dolor duduk amet, consectetur.Doxposueretellus Za Weekend Weekend Lapisan Produksi Terbaru Ipsuodignissim Nulla Element Clinical A Pesan.Magna Invest Xmorbiuf Quiver Cartoon.Sekarang kelaparan cokelat dan faucibuxattis daerah sedih.Tapi Ultricies Mass Pool Sagittntegelorem.Tetapi setiap orang selalu menjadi survei proidiasollictudinvulputate.",
+        "phoneNumber": "Nomor telepon",
+        "enterNumber": "Masukkan nomor telepon Anda",
+        "message": "Pesan",
+        "writeMessage": "Tulis pesan Anda",
+        "interested": "saya tertarik"
+    },
+    "educationLoanModal": {
+        "educationLoan": "Pinjaman Pendidikan",
+        "thankYou": "Terima kasih atas pinjaman pendidikan yang tertarik, kami akan segera menghubungi",
+        "okay": "Oke"
+    },
+    "accountScreen": {
+        "account": "Akun",
+        "nearbyBank": "Bank terdekat",
+        "nearbyATMs": "ATM terdekat",
+        "changePin": "Ganti PIN",
+        "language": "Bahasa",
+        "PrivacyPolicy": "Kebijakan pribadi",
+        "termsCondition": "Syarat & Kondisi",
+        "customerSupport": "Dukungan pelanggan",
+        "logout": "Keluar"
+    },
+    "editProfileScreen": {
+        "editProfile": "Sunting profil",
+        "name": "Nama",
+        "enterName": "Masukkan nama Anda",
+        "email": "Alamat email",
+        "enterEmail": "Masukkan alamat email Anda",
+        "mobile": "Nomor telepon",
+        "enterMobile": "Masukkan nomor telepon Anda",
+        "update": "Memperbarui",
+        "changeProfile": "Unggah gambar",
+        "camera": "Kamera",
+        "gallery": "Galeri",
+        "remove": "Menghapus",
+        "removeImage": "Foto profil dihapus.",
+        "ok": "Oke",
+        "deny": "Anda telah membantah untuk mengakses kamera !!!"
+
+    },
+    "nearByScreen": {
+        "direction": "Arah",
+        "youAreHere": "Kamu di sini",
+        "nearbyBank": "Bank terdekat"
+    },
+    "changePinScreen": {
+        "changePin": "Ganti PIN",
+        "currentPin": "PIN sekarang",
+        "enterCurrentPin": "Masukkan pin saat ini",
+        "newPin": "Pin baru",
+        "enterNewPin": "Masukkan pin baru",
+        "confirmPin": "Konfirmasi pin",
+        "confirmNewPin": "Konfirmasikan pin baru Anda",
+        "reset": "Mengatur ulang"
+    },
+    "languageScreen": {
+        "language": "Bahasa",
+        "update": "Memperbarui"
+    },
+    "termsConditionScreen": {
+        "termsAndCondition": "Syarat dan Kondisi",
+        "mainDescription": "Lorem ipsum dolor duduk amet, consectetur.Doxposueretellus Za Weekend Weekend Lapisan Produksi Terbaru Ipsuodignissim Nulla Element Clinical A Pesan.Magna Invest Xmorbiuf Quiver Cartoon.Sekarang kelaparan cokelat dan faucibuxattis daerah sedih.Tapi Ultricies Mass Pool Sagittntegelorem.Tetapi setiap orang selalu merupakan survei proidiasollicitudinvulputate.lorem carrots consectetur.dolposueretellus akhir pekan terbaru dengan asumsi elemen apa pun orci sebuah diktumst.magna placerat vmorbiuf quiver viverra. Sepak bola sekarang danau.",
+        "subDescription": "Lorem ipsum dolor duduk amet, consectetur.Doxposueretellus Za Weekend Weekend Lapisan Produksi Terbaru Ipsuodignissim Nulla Element Clinical A Pesan.Magna Invest Xmorbiuf Quiver Cartoon.Sekarang kelaparan cokelat dan faucibuxattis daerah sedih.Tapi Ultricies Mass Pool Sagittntegelorem.Tetapi setiap orang selalu menjadi survei proidiasollictudinvulputate."
+    },
+    "privacyPolicyScreen": {
+        "privacyPolicy": "Kebijakan pribadi",
+        "mainDescription": "Lorem ipsum dolor duduk amet, consectetur.Doxposueretellus Za Weekend Weekend Lapisan Produksi Terbaru Ipsuodignissim Nulla Element Clinical A Pesan.Magna Invest Xmorbiuf Quiver Cartoon.Sekarang kelaparan cokelat dan faucibuxattis daerah sedih.Tapi Ultricies Mass Pool Sagittntegelorem.Tetapi setiap orang selalu merupakan survei proidiasollicitudinvulputate.lorem carrots consectetur.dolposueretellus akhir pekan terbaru dengan asumsi elemen apa pun orci sebuah diktumst.magna placerat vmorbiuf quiver viverra. Sepak bola sekarang danau.",
+        "subDescription": "Lorem ipsum dolor duduk amet, consectetur.Doxposueretellus Za Weekend Weekend Lapisan Produksi Terbaru Ipsuodignissim Nulla Element Clinical A Pesan.Magna Invest Xmorbiuf Quiver Cartoon.Sekarang kelaparan cokelat dan faucibuxattis daerah sedih.Tapi Ultricies Mass Pool Sagittntegelorem.Tetapi setiap orang selalu menjadi survei proidiasollictudinvulputate."
+    },
+    "customerSupportScreen": {
+        "customerSupport": "Dukungan pelanggan",
+        "weAreHere": "Kami di sini untuk membantu jadi silakan menghubungi kami.",
+        "name": "Nama",
+        "enterName": "Masukkan nama Anda",
+        "email": "Alamat email",
+        "enterEmail": "Masukkan alamat email Anda",
+        "message": "Pesan",
+        "enterMessage": "Masukkan pesan",
+        "submit": "Kirim"
+    },
+    "logoutModal": {
+        "logout": "Keluar",
+        "areYouSure": "Apakah Anda ingin keluar?",
+        "cancel": "Membatalkan",
+        "yes": "Ya"
+    }
+}

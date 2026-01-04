@@ -1,0 +1,318 @@
+{
+    "onboardingScreen": {
+        "title1": "सुरक्षित और तेज़ बैंकिंग संचालन",
+        "title2": "अपने पैसे को समझदारी से प्रबंधित करें",
+        "title3": "अपने आस -पास बैंक और एटीएम खोजें",
+        "description": "लोरम इप्सम डोलर बैठो एमेट, कंसेकटुर।कार्टून शाही तत्व रोग।तत्व केले में निवेश करने वाला कोई भी व्यक्ति पैकेज की समस्या है।",
+        "skip": "छोडना",
+        "tapBack": "ऐप से बाहर निकलने के लिए फिर से टैप करें"
+    },
+    "loginScreen": {
+        "login": "लॉग इन करें",
+        "welcomeBack": "वापसी पर स्वागत है",
+        "happy": "हम आपको फिर से देखकर खुश हैं",
+        "mobileNumber": "अपना मोबाइल संख्या दर्ज करे",
+        "search": "खोज",
+        "close": "बंद करना",
+        "tapBack": "ऐप से बाहर निकलने के लिए फिर से टैप करें"
+    },
+    "registerScreen": {
+        "register": "पंजीकरण करवाना",
+        "name": "अपना नाम दर्ज करें",
+        "number": "अपना मोबाइल संख्या दर्ज करे",
+        "email": "अपना ईमेल पता दर्ज करें"
+    },
+    "otpScreen": {
+        "verification": "ओटीपी सत्यापन",
+        "pleaseEnter": "OTP आपको अपने मोबाइल नंबर पर भेजा गया है कृपया इसे नीचे दर्ज करें",
+        "verify": "सत्यापित करना",
+        "resend": "पुन: भेजें"
+    },
+    "pinScreen": {
+        "enterPin": "पिन दर्ज करें",
+        "welcome": "स्वागत",
+        "enterDigit": "लेस्ली अलेक्जेंडर 4 अंक पिन दर्ज करें",
+        "continue": "जारी रखना"
+    },
+    "loader": {
+        "pleaseWait": "कृपया प्रतीक्षा करें"
+    },
+    "bottomTab": {
+        "home": "घर",
+        "deposit": "जमा",
+        "loans": "ऋण",
+        "account": "खाता",
+        "tapBack": "ऐप से बाहर निकलने के लिए फिर से टैप करें"
+    },
+    "homeScreen": {
+        "totalBalance": "कुल शेष",
+        "savingAccount": "बचत खाता",
+        "services": "सेवाएं",
+        "account": "खाता",
+        "fundTransfer": "फंड ट्रांसफर",
+        "statement": "कथन",
+        "billPay": "बिल का भुगतान",
+        "scan": "स्कैन और भुगतान करें",
+        "more": "अधिक",
+        "transaction": "नवीनतम लेनदेन",
+        "seeAll": "सभी देखें"
+    },
+    "servicesScreen": {
+        "services": "सेवाएं",
+        "account": "खाता",
+        "fundTransfer": "फंड ट्रांसफर",
+        "statement": "कथन",
+        "billPay": "बिल का भुगतान",
+        "scan": "स्कैन और भुगतान करें",
+        "deposit": "जमा",
+        "loans": "ऋण",
+        "cards": "पत्ते",
+        "mutualFund": "म्यूचुअल फंड",
+        "insurance": "बीमा",
+        "shopOffer": "दुकान और प्रस्ताव",
+        "recharge": "फिर से दाम लगाना"
+    },
+    "latestTransactionScreen": {
+        "transaction": "लेन-देन"
+    },
+    "notificationScreen": {
+        "notification": "अधिसूचना",
+        "remove": "अधिसूचना हटा दी गई।",
+        "noNotification": "कोई नई अधिसूचना नहीं"
+    },
+    "fundTransferScreen": {
+        "fundTransfer": "फंड ट्रांसफर",
+        "beneficiaryPay": "लाभार्थी वेतन",
+        "payment": "इबान भुगतान",
+        "pay": "इम्प्स वेतन",
+        "transferNow": "अब स्थानांतरित करें"
+    },
+    "beneficiaryPayScreen": {
+        "fromAccount": "अकाउंट से",
+        "beneficiaryInfo": "लाभार्थी जानकारी",
+        "name": "लाभार्थी का नाम",
+        "bankName": "लाभार्थी के बैंक का नाम",
+        "accountNumber": "लाभार्थी खाता संख्या",
+        "amount": "मात्रा",
+        "transferLimit": "अंतरण सीमा",
+        "savingAccount": "बचत खाता",
+        "currentAccount": "चालू खाता",
+        "salaryAccount": "वेतन खाता",
+        "nriAccount": "एनआरआई खाता"
+    },
+    "paymentIBANScreen": {
+        "fromAccount": "अकाउंट से",
+        "beneficiaryInfo": "लाभार्थी जानकारी",
+        "number": "आईबैन संख्या",
+        "name": "लाभार्थी का नाम",
+        "code": "बीआईसी कोड",
+        "bank": "लाभार्थी बैंक",
+        "amount": "मात्रा",
+        "remark": "टिप्पणी",
+        "savingAccount": "बचत खाता",
+        "currentAccount": "चालू खाता",
+        "salaryAccount": "वेतन खाता",
+        "nriAccount": "एनआरआई खाता"
+    },
+    "payIMPSScreen": {
+        "fromAccount": "अकाउंट से",
+        "accountNo": "खाता सं।",
+        "holderName": "खाता धारक का नाम",
+        "enterHolderName": "खाता धारक नाम दर्ज करें",
+        "toAccount": "खाते में",
+        "enterAccountNo": "खाता सं।",
+        "bankName": "बैंक का नाम",
+        "hBank": "एचडीएफसी बैंक",
+        "iCode": "IFSC कोड",
+        "enterICode": "IFSC कोड दर्ज करें",
+        "amount": "मात्रा",
+        "enterAmount": "राशि डालें",
+        "savingAccount": "बचत खाता",
+        "currentAccount": "चालू खाता",
+        "salaryAccount": "वेतन खाता",
+        "nriAccount": "एनआरआई खाता"
+    },
+    "successfullyScreen": {
+        "successfully": "सफलतापूर्वक स्थानांतरण",
+        "transferred": "इसे हस्तांतरित किया गया",
+        "from": "से",
+        "remark": "टिप्पणी",
+        "amount": "मात्रा",
+        "paymentMode": "भुगतान का प्रकार",
+        "backToHome": "घर वापिस जा रहा हूँ"
+    },
+    "accountDetailScreen": {
+        "account": "खाता",
+        "totalBalance": "कुल शेष",
+        "accountNumber": "खाता संख्या",
+        "accountDetail": "खाता विवरण",
+        "cif": "सीआईएफ",
+        "ifsc": "ifsc",
+        "branchCode": "शाखा क्र्मांक",
+        "branchName": "शाखा का नाम",
+        "openingDate": "खाता खोलने की तारीख",
+        "mmid": "म्मीद",
+        "currentAccount": "चालू खाता",
+        "saving": "बचत खाता",
+        "salaryAccount": "वेतन खाता",
+        "nRIAccount": "एनआरआई खाता",
+        "viewStateMent": "देखें कथन"
+    },
+    "statementScreen": {
+        "statement": "कथन",
+        "totalBalance": "कुल शेष",
+        "selectDate": "तारीख़ चुनें",
+        "go": "जाना",
+        "transaction": "लेन -देन परिणाम",
+        "currentAccount": "चालू खाता",
+        "savingAccount": "बचत खाता",
+        "salaryAccount": "वेतन खाता",
+        "nriAccount": "एनआरआई खाता",
+        "cancel": "रद्द करना",
+        "ok": "ठीक"
+    },
+    "depositScreen": {
+        "deposit": "जमा",
+        "currentDeposit": "चालू जमा राशि",
+        "depositTo": "जमा करने के लिए:",
+        "status": "दर्जा:",
+        "rate": "दर:",
+        "pending": "लंबित",
+        "completedDeposit": "पूरा जमा",
+        "completed": "पुरा होना।"
+    },
+    "addDepositScreen": {
+        "addDeposit": "जमा जोड़ें",
+        "depositPeriod": "जमा अवधि चुनें",
+        "amount": "मात्रा",
+        "enterDeposit": "जमा राशि दर्ज करें",
+        "yourRate": "आपकी दर 8% है",
+        "depositTo": "जमा करना",
+        "selectAmount": "लेखा का चयन करें",
+        "uploadImage": "चेक इमेज अपलोड करें",
+        "frontSideImage": "अपलोड करें फ्रंट साइड इमेज अपलोड करें",
+        "backSideImage": "चेक बैक साइड इमेज अपलोड करें",
+        "depositNow": "अब जमा करें",
+        "savingAccount": "बचत खाता",
+        "currentAccount": "चालू खाता",
+        "salaryAccount": "वेतन खाता",
+        "nriAccount": "एनआरआई खाता"
+    },
+    "successDepositModal": {
+        "success": "सफलता",
+        "congratulation": "आपके $ 1000 को 18 महीने के लिए सफलतापूर्वक जमा बधाई",
+        "okay": "ठीक"
+    },
+    "loansScreen": {
+        "loans": "ऋण",
+        "makeEducation": "शिक्षा को अपनी सर्वोच्च प्राथमिकता दें",
+        "lowestInterest": "सबसे कम ब्याज दर",
+        "theRightChoiceCar": "अपनी कार को वित्त करने के लिए सही विकल्प",
+        "dreamCar": "अपनी सपनों की कार खरीदें",
+        "applyNow": "अभी अप्लाई करें",
+        "currentLoans": "वर्तमान ऋण",
+        "period": "अवधि",
+        "rate": "दर",
+        "eMI": "ईएमआई",
+        "viewStatement": "देखें कथन",
+        "homeLoan": "गृह ऋण",
+        "carLoan": "कार ऋण"
+    },
+    "loansStatementScreen": {
+        "statement": "कथन",
+        "period": "अवधि",
+        "rate": "दर",
+        "eMI": "ईएमआई",
+        "recentTransaction": "हाल ही में लेन -देन"
+    },
+    "educationLoanScreen": {
+        "educationLoan": "शिक्षा ऋण",
+        "makeEducation": "शिक्षा को अपनी सर्वोच्च प्राथमिकता दें",
+        "description": "लोरम इप्सम डोलर बैठो एमेट, कंसेकटुर।Doxposueretellus Za सप्ताहांत नवीनतम विनिर्माण परत ipsuodignissim nulla तत्व नैदानिक ​​एक संदेश।मैग्ना निवेश xmorbiuf क्विवर कार्टून।अब हंगर चॉकलेट और फ्यूसीबक्सटिस उदास क्षेत्र।लेकिन अल्ट्रिसिस मास पूल SAGITTNTEGELOREM।लेकिन हर कोई हमेशा एक सर्वेक्षण proidiasollicitudinvulputate है।",
+        "phoneNumber": "फ़ोन नंबर",
+        "enterNumber": "अपना फोन नंबर डालें",
+        "message": "संदेश",
+        "writeMessage": "अपना संदेश लिखें",
+        "interested": "मेरी रूचि है"
+    },
+    "educationLoanModal": {
+        "educationLoan": "शिक्षा ऋण",
+        "thankYou": "इंटर्निंग एजुकेशन लोन के लिए धन्यवाद हम जल्द ही संपर्क करेंगे",
+        "okay": "ठीक"
+    },
+    "accountScreen": {
+        "account": "खाता",
+        "nearbyBank": "आस -पास का बैंक",
+        "nearbyATMs": "पास के एटीएम",
+        "changePin": "पिन बदलिए",
+        "language": "भाषा",
+        "PrivacyPolicy": "गोपनीयता नीति",
+        "termsCondition": "नियम व शर्त",
+        "customerSupport": "ग्राहक सहेयता",
+        "logout": "लॉग आउट"
+    },
+    "editProfileScreen": {
+        "editProfile": "प्रोफ़ाइल संपादित करें",
+        "name": "नाम",
+        "enterName": "अपना नाम दर्ज करें",
+        "email": "मेल पता",
+        "enterEmail": "अपना ईमेल पता दर्ज करें",
+        "mobile": "फ़ोन नंबर",
+        "enterMobile": "अपना फोन नंबर डालें",
+        "update": "अद्यतन",
+        "changeProfile": "तस्विर अपलोड करना",
+        "camera": "कैमरा",
+        "gallery": "गेलरी",
+        "remove": "निकालना",
+        "removeImage": "प्रोफ़ाइल फोटो हटा दिया गया।",
+        "ok": "ठीक",
+        "deny": "आपने कैमरा एक्सेस करने से इनकार कर दिया है !!!"
+
+    },
+    "nearByScreen": {
+        "direction": "दिशा",
+        "youAreHere": "आप यहां हैं",
+        "nearbyBank": "आस -पास का बैंक"
+    },
+    "changePinScreen": {
+        "changePin": "पिन बदलिए",
+        "currentPin": "वर्तमान पिन",
+        "enterCurrentPin": "वर्तमान पिन दर्ज करें",
+        "newPin": "नया पिन",
+        "enterNewPin": "नया पिन दर्ज करें",
+        "confirmPin": "पिन की पुष्टि करें",
+        "confirmNewPin": "अपने नए पिन की पुष्टि करें",
+        "reset": "रीसेट"
+    },
+    "languageScreen": {
+        "language": "भाषा",
+        "update": "अद्यतन"
+    },
+    "termsConditionScreen": {
+        "termsAndCondition": "नियम व शर्तें",
+        "mainDescription": "लोरम इप्सम डोलर बैठो एमेट, कंसेकटुर।Doxposueretellus Za सप्ताहांत नवीनतम विनिर्माण परत ipsuodignissim nulla तत्व नैदानिक ​​एक संदेश।मैग्ना निवेश xmorbiuf क्विवर कार्टून।अब हंगर चॉकलेट और फ्यूसीबक्सटिस उदास क्षेत्र।लेकिन अल्ट्रिसिस मास पूल SAGITTNTEGELOREM।लेकिन हर कोई हमेशा एक सर्वेक्षण होता है। फुटबॉल अब झीलें।",
+        "subDescription": "लोरम इप्सम डोलर बैठो एमेट, कंसेकटुर।Doxposueretellus Za सप्ताहांत नवीनतम विनिर्माण परत ipsuodignissim nulla तत्व नैदानिक ​​एक संदेश।मैग्ना निवेश xmorbiuf क्विवर कार्टून।अब हंगर चॉकलेट और फ्यूसीबक्सटिस उदास क्षेत्र।लेकिन अल्ट्रिसिस मास पूल SAGITTNTEGELOREM।लेकिन हर कोई हमेशा एक सर्वेक्षण proidiasollicitudinvulputate है।"
+    },
+    "privacyPolicyScreen": {
+        "privacyPolicy": "गोपनीयता नीति",
+        "mainDescription": "लोरम इप्सम डोलर बैठो एमेट, कंसेकटुर।Doxposueretellus Za सप्ताहांत नवीनतम विनिर्माण परत ipsuodignissim nulla तत्व नैदानिक ​​एक संदेश।मैग्ना निवेश xmorbiuf क्विवर कार्टून।अब हंगर चॉकलेट और फ्यूसीबक्सटिस उदास क्षेत्र।लेकिन अल्ट्रिसिस मास पूल SAGITTNTEGELOREM।लेकिन हर कोई हमेशा एक सर्वेक्षण होता है। फुटबॉल अब झीलें।",
+        "subDescription": "लोरम इप्सम डोलर बैठो एमेट, कंसेकटुर।Doxposueretellus Za सप्ताहांत नवीनतम विनिर्माण परत ipsuodignissim nulla तत्व नैदानिक ​​एक संदेश।मैग्ना निवेश xmorbiuf क्विवर कार्टून।अब हंगर चॉकलेट और फ्यूसीबक्सटिस उदास क्षेत्र।लेकिन अल्ट्रिसिस मास पूल SAGITTNTEGELOREM।लेकिन हर कोई हमेशा एक सर्वेक्षण proidiasollicitudinvulputate है।"
+    },
+    "customerSupportScreen": {
+        "customerSupport": "ग्राहक सहेयता",
+        "weAreHere": "We are here to help so please get in touch with us.",
+        "name": "नाम",
+        "enterName": "अपना नाम दर्ज करें",
+        "email": "मेल पता",
+        "enterEmail": "अपना ईमेल पता दर्ज करें",
+        "message": "संदेश",
+        "enterMessage": "संदेश दर्ज करें",
+        "submit": "जमा करना"
+    },
+    "logoutModal": {
+        "logout": "लॉग आउट",
+        "areYouSure": "क्या आप sur हैं जिसे आप लॉगआउट करना चाहते हैं?",
+        "cancel": "रद्द करना",
+        "yes": "हाँ"
+    }
+}

@@ -1,0 +1,318 @@
+{
+    "onboardingScreen": {
+        "title1": "العمليات المصرفية الآمنة والسريعة",
+        "title2": "إدارة أموالك بحكمة",
+        "title3": "ابحث عن البنك وأجهزة الصراف الآلي من حولك",
+        "description": "lorem ipsum dolor sit amet ، incectetur.مرض العنصر الإمبراطوري الكرتون.أي شخص يستثمر في Element Bananas هو مشكلة الحزمة.",
+        "skip": "يتخطى",
+        "tapBack": "اضغط مرة أخرى للخروج من التطبيق"
+    },
+    "loginScreen": {
+        "login": "تسجيل الدخول",
+        "welcomeBack": "مرحبًا بعودتك",
+        "happy": "نحن سعداء أن نراكم مرة أخرى",
+        "mobileNumber": "أدخل رقم هاتفك المحمول",
+        "search": "يبحث",
+        "close": "يغلق",
+        "tapBack": "اضغط مرة أخرى للخروج من التطبيق"
+    },
+    "registerScreen": {
+        "register": "يسجل",
+        "name": "أدخل أسمك",
+        "number": "أدخل رقم هاتفك المحمول",
+        "email": "أدخل عنوان بريدك الالكتروني"
+    },
+    "otpScreen": {
+        "verification": "التحقق من OTP",
+        "pleaseEnter": "تم إرسال OTP إليك على رقم هاتفك المحمول ، الرجاء إدخاله أدناه",
+        "verify": "يؤكد",
+        "resend": "إعادة إرسال"
+    },
+    "pinScreen": {
+        "enterPin": "أدخل دبوس",
+        "welcome": "مرحباً",
+        "enterDigit": "ليزلي ألكساندر أدخل 4 أرقام دبوس",
+        "continue": "يكمل"
+    },
+    "loader": {
+        "pleaseWait": "انتظر من فضلك"
+    },
+    "bottomTab": {
+        "home": "بيت",
+        "deposit": "إيداع",
+        "loans": "القروض",
+        "account": "حساب",
+        "tapBack": "اضغط مرة أخرى للخروج من التطبيق"
+    },
+    "homeScreen": {
+        "totalBalance": "التوازن الكلي",
+        "savingAccount": "حفظ الحساب",
+        "services": "خدمات",
+        "account": "حساب",
+        "fundTransfer": "تحويل الأموال",
+        "statement": "إفادة",
+        "billPay": "دفع الفاتورة",
+        "scan": "المسح والدفع",
+        "more": "أكثر",
+        "transaction": "أحدث معاملة",
+        "seeAll": "اظهار الكل"
+    },
+    "servicesScreen": {
+        "services": "خدمات",
+        "account": "حساب",
+        "fundTransfer": "تحويل الأموال",
+        "statement": "إفادة",
+        "billPay": "دفع الفاتورة",
+        "scan": "المسح والدفع",
+        "deposit": "إيداع",
+        "loans": "القروض",
+        "cards": "البطاقات",
+        "mutualFund": "صندوق مشترك",
+        "insurance": "تأمين",
+        "shopOffer": "متجر وعرض",
+        "recharge": "تعبئة رصيد"
+    },
+    "latestTransactionScreen": {
+        "transaction": "عملية"
+    },
+    "notificationScreen": {
+        "notification": "إشعار",
+        "remove": "الإخطار تمت إزالته.",
+        "noNotification": "لا يوجد إشعار جديد"
+    },
+    "fundTransferScreen": {
+        "fundTransfer": "تحويل الأموال",
+        "beneficiaryPay": "أجر المستفيد",
+        "payment": "دفع إيبان",
+        "pay": "دفعات الأجر",
+        "transferNow": "نقل الآن"
+    },
+    "beneficiaryPayScreen": {
+        "fromAccount": "من حساب",
+        "beneficiaryInfo": "معلومات المستفيدة",
+        "name": "أسم المستفيد",
+        "bankName": "المستفيد اسم البنك",
+        "accountNumber": "رقم حساب المستفيد",
+        "amount": "كمية",
+        "transferLimit": "حد النقل",
+        "savingAccount": "حفظ الحساب",
+        "currentAccount": "الحساب الحالي",
+        "salaryAccount": "حساب الراتب",
+        "nriAccount": "حساب NRI"
+    },
+    "paymentIBANScreen": {
+        "fromAccount": "من حساب",
+        "beneficiaryInfo": "معلومات المستفيدة",
+        "number": "رقم IBAN",
+        "name": "أسم المستفيد",
+        "code": "رمز BIC",
+        "bank": "البنك المستفيد",
+        "amount": "كمية",
+        "remark": "ملاحظة",
+        "savingAccount": "حفظ الحساب",
+        "currentAccount": "الحساب الحالي",
+        "salaryAccount": "حساب الراتب",
+        "nriAccount": "حساب NRI"
+    },
+    "payIMPSScreen": {
+        "fromAccount": "من حساب",
+        "accountNo": "أدخل الحساب لا",
+        "holderName": "اسم صاحب الحساب",
+        "enterHolderName": "أدخل اسم صاحب الحساب",
+        "toAccount": "لحساب",
+        "enterAccountNo": "أدخل الحساب لا",
+        "bankName": "اسم البنك",
+        "hBank": "بنك HDFC",
+        "iCode": "رمز IFSC",
+        "enterICode": "أدخل رمز IFSC",
+        "amount": "كمية",
+        "enterAmount": "أدخل المبلغ",
+        "savingAccount": "حفظ الحساب",
+        "currentAccount": "الحساب الحالي",
+        "salaryAccount": "حساب الراتب",
+        "nriAccount": "حساب NRI"
+    },
+    "successfullyScreen": {
+        "successfully": "النقل بنجاح",
+        "transferred": "نقل إلى",
+        "from": "من",
+        "remark": "ملاحظة",
+        "amount": "كمية",
+        "paymentMode": "طريقة الدفع",
+        "backToHome": "العودة إلى المنزل"
+    },
+    "accountDetailScreen": {
+        "account": "حساب",
+        "totalBalance": "التوازن الكلي",
+        "accountNumber": "رقم حساب",
+        "accountDetail": "تفاصيل الحساب",
+        "cif": "cif",
+        "ifsc": "ifsc",
+        "branchCode": "رمز الفرع",
+        "branchName": "اسم الفرع",
+        "openingDate": "تاريخ فتح الحساب",
+        "mmid": "مامد",
+        "currentAccount": "الحساب الحالي",
+        "saving": "حفظ الحساب",
+        "salaryAccount": "حساب الراتب",
+        "nRIAccount": "حساب NRI",
+        "viewStateMent": "عرض بيان"
+    },
+    "statementScreen": {
+        "statement": "إفادة",
+        "totalBalance": "التوازن الكلي",
+        "selectDate": "حدد تاريخ",
+        "go": "يذهب",
+        "transaction": "نتيجة المعاملة",
+        "currentAccount": "الحساب الحالي",
+        "savingAccount": "حفظ الحساب",
+        "salaryAccount": "حساب الراتب",
+        "nriAccount": "حساب NRI",
+        "cancel": "يلغي",
+        "ok": "تمام"
+    },
+    "depositScreen": {
+        "deposit": "إيداع",
+        "currentDeposit": "الإيداع الحالي",
+        "depositTo": "إيداع إلى:",
+        "status": "حالة:",
+        "rate": "معدل:",
+        "pending": "قيد الانتظار",
+        "completedDeposit": "إيداع مكتمل",
+        "completed": "مكتمل"
+    },
+    "addDepositScreen": {
+        "addDeposit": "أضف الإيداع",
+        "depositPeriod": "اختر فترة الإيداع",
+        "amount": "كمية",
+        "enterDeposit": "أدخل مبلغ الإيداع",
+        "yourRate": "معدلك 8 ٪",
+        "depositTo": "إيداع ل",
+        "selectAmount": "حدد حساب",
+        "uploadImage": "تحميل صورة التحقق",
+        "frontSideImage": "تحميل صورة الجانب الأمامي",
+        "backSideImage": "التحميل تحقق من الصورة الجانبية الخلفية",
+        "depositNow": "إيداع الآن",
+        "savingAccount": "حفظ الحساب",
+        "currentAccount": "الحساب الحالي",
+        "salaryAccount": "حساب الراتب",
+        "nriAccount": "حساب NRI"
+    },
+    "successDepositModal": {
+        "success": "نجاح",
+        "congratulation": "تهنئة 1000 دولار تم إيداعها بنجاح لمدة 18 شهرًا",
+        "okay": "تمام"
+    },
+    "loansScreen": {
+        "loans": "القروض",
+        "makeEducation": "اجعل التعليم أولويتك الأعلى",
+        "lowestInterest": "أدنى سعر فائدة",
+        "theRightChoiceCar": "الاختيار الصحيح لتمويل سيارتك",
+        "dreamCar": "شراء سيارة أحلامك",
+        "applyNow": "قدم الآن",
+        "currentLoans": "القروض الحالية",
+        "period": "فترة",
+        "rate": "معدل",
+        "eMI": "emi",
+        "viewStatement": "عرض بيان",
+        "homeLoan": "قرض المنزل",
+        "carLoan": "قرض السيارة"
+    },
+    "loansStatementScreen": {
+        "statement": "إفادة",
+        "period": "فترة",
+        "rate": "معدل",
+        "eMI": "emi",
+        "recentTransaction": "المعاملة الأخيرة"
+    },
+    "educationLoanScreen": {
+        "educationLoan": "قرض التعليم",
+        "makeEducation": "اجعل التعليم أولويتك الأعلى",
+        "description": "lorem ipsum dolor sit amet ، incectetur.doxposueretellus ZA عطلة نهاية الأسبوع أحدث طبقة التصنيع ipsuodignissim nulla element A.Magna Invest Xmorbiuf كرتون.الآن الشوكولاتة الجوع والبوكبوكاتيس الحزينة.لكن الجمعات الشاملة للمحاسبة.لكن الجميع دائمًا ما يكون استطلاعًا proidiasollicitudinvulputate.",
+        "phoneNumber": "رقم التليفون",
+        "enterNumber": "أدخل رقم هاتفك",
+        "message": "رسالة",
+        "writeMessage": "اكتب رسالتك",
+        "interested": "أنا مهتم"
+    },
+    "educationLoanModal": {
+        "educationLoan": "قرض التعليم",
+        "thankYou": "شكرًا لك على قرض التعليم المهتمين سنقوم بالاتصال قريبًا",
+        "okay": "تمام"
+    },
+    "accountScreen": {
+        "account": "حساب",
+        "nearbyBank": "البنك القريب",
+        "nearbyATMs": "أجهزة الصراف الآلي القريبة",
+        "changePin": "تغيير دبوس",
+        "language": "لغة",
+        "PrivacyPolicy": "سياسة الخصوصية",
+        "termsCondition": "الشروط والشرط",
+        "customerSupport": "دعم العملاء",
+        "logout": "تسجيل خروج"
+    },
+    "editProfileScreen": {
+        "editProfile": "تعديل الملف الشخصي",
+        "name": "اسم",
+        "enterName": "أدخل أسمك",
+        "email": "عنوان البريد الإلكتروني",
+        "enterEmail": "أدخل عنوان بريدك الالكتروني",
+        "mobile": "رقم التليفون",
+        "enterMobile": "أدخل رقم هاتفك",
+        "update": "تحديث",
+        "changeProfile": "تحميل الصور",
+        "camera": "آلة تصوير",
+        "gallery": "صالة عرض",
+        "remove": "يزيل",
+        "removeImage": "تمت إزالة صورة الملف الشخصي.",
+        "ok": "نعم",
+        "deny": "لقد أنكرت الوصول إلى الكاميرا !!!"
+
+    },
+    "nearByScreen": {
+        "direction": "اتجاه",
+        "youAreHere": "أنت هنا",
+        "nearbyBank": "البنك القريب"
+    },
+    "changePinScreen": {
+        "changePin": "تغيير دبوس",
+        "currentPin": "الرقم السري الحالي",
+        "enterCurrentPin": "أدخل الدبوس الحالي",
+        "newPin": "دبوس جديد",
+        "enterNewPin": "أدخل دبوس جديد",
+        "confirmPin": "تأكيد PIN",
+        "confirmNewPin": "تأكد من دبوسك الجديد",
+        "reset": "إعادة ضبط"
+    },
+    "languageScreen": {
+        "language": "لغة",
+        "update": "تحديث"
+    },
+    "termsConditionScreen": {
+        "termsAndCondition": "أحكام وشروط",
+        "mainDescription": "lorem ipsum dolor sit amet ، incectetur.doxposueretellus ZA عطلة نهاية الأسبوع أحدث طبقة التصنيع ipsuodignissim nulla element A.Magna Invest Xmorbiuf كرتون.الآن الشوكولاتة الجوع والبوكبوكاتيس الحزينة.لكن الجمعات الشاملة للمحاسبة.لكن الجميع دائمًا ما يكون استطلاعًا proidiasollicitudinvulputate.lor currots consectetur.dolposueretellus في عطلة نهاية الأسبوع الأحدث على افتراض أي عنصر orci dictumst.magna placerat vmorbiuf quiver viverra.nunc ununge choconate and faucibusattis sagitintingelorem. كرة القدم الآن بحيرات.",
+        "subDescription": "lorem ipsum dolor sit amet ، incectetur.doxposueretellus ZA عطلة نهاية الأسبوع أحدث طبقة التصنيع ipsuodignissim nulla element A.Magna Invest Xmorbiuf كرتون.الآن الشوكولاتة الجوع والبوكبوكاتيس الحزينة.لكن الجمعات الشاملة للمحاسبة.لكن الجميع دائمًا ما يكون استطلاعًا proidiasollicitudinvulputate."
+    },
+    "privacyPolicyScreen": {
+        "privacyPolicy": "سياسة الخصوصية",
+        "mainDescription": "lorem ipsum dolor sit amet ، incectetur.doxposueretellus ZA عطلة نهاية الأسبوع أحدث طبقة التصنيع ipsuodignissim nulla element A.Magna Invest Xmorbiuf كرتون.الآن الشوكولاتة الجوع والبوكبوكاتيس الحزينة.لكن الجمعات الشاملة للمحاسبة.لكن الجميع دائمًا ما يكون استطلاعًا proidiasollicitudinvulputate.lor currots consectetur.dolposueretellus في عطلة نهاية الأسبوع الأحدث على افتراض أي عنصر orci dictumst.magna placerat vmorbiuf quiver viverra.nunc ununge choconate and faucibusattis sagitintingelorem. كرة القدم الآن بحيرات.",
+        "subDescription": "lorem ipsum dolor sit amet ، incectetur.doxposueretellus ZA عطلة نهاية الأسبوع أحدث طبقة التصنيع ipsuodignissim nulla element A.Magna Invest Xmorbiuf كرتون.الآن الشوكولاتة الجوع والبوكبوكاتيس الحزينة.لكن الجمعات الشاملة للمحاسبة.لكن الجميع دائمًا ما يكون استطلاعًا proidiasollicitudinvulputate."
+    },
+    "customerSupportScreen": {
+        "customerSupport": "دعم العملاء",
+        "weAreHere": "نحن هنا للمساعدة لذا يرجى الاتصال بنا.",
+        "name": "اسم",
+        "enterName": "أدخل أسمك",
+        "email": "عنوان البريد الإلكتروني",
+        "enterEmail": "أدخل عنوان بريدك الالكتروني",
+        "message": "رسالة",
+        "enterMessage": "أدخل رسالة",
+        "submit": "يُقدِّم"
+    },
+    "logoutModal": {
+        "logout": "تسجيل خروج",
+        "areYouSure": "هل انت تريد تسجيل الدخول؟",
+        "cancel": "يلغي",
+        "yes": "نعم"
+    }
+}

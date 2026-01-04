@@ -1,0 +1,318 @@
+{
+    "onboardingScreen": {
+        "title1": "安全快速的银行业务",
+        "title2": "明智地管理您的钱",
+        "title3": "在您周围找到银行和ATM",
+        "description": "Lorem Ipsum Dolor Sit Amet，Consettur。卡通帝国元素疾病。任何在元素香蕉上投资的人都是包装的问题。",
+        "skip": "跳过",
+        "tapBack": "再次点击以退出应用程序"
+    },
+    "loginScreen": {
+        "login": "登录",
+        "welcomeBack": "欢迎回来",
+        "happy": "我们很高兴再次见到你",
+        "mobileNumber": "输入你的手机号码",
+        "search": "搜索",
+        "close": "关闭",
+        "tapBack": "再次点击以退出应用程序"
+    },
+    "registerScreen": {
+        "register": "登记",
+        "name": "输入你的名字",
+        "number": "输入你的手机号码",
+        "email": "输入你的电子邮箱地址"
+    },
+    "otpScreen": {
+        "verification": "OTP验证",
+        "pleaseEnter": "OTP已发送给您的手机号码，请在下面输入",
+        "verify": "核实",
+        "resend": "重发"
+    },
+    "pinScreen": {
+        "enterPin": "输入PIN",
+        "welcome": "欢迎",
+        "enterDigit": "莱斯利·亚历山大（Leslie Alexander）Enter 4 Digit Pin",
+        "continue": "继续"
+    },
+    "loader": {
+        "pleaseWait": "请稍等"
+    },
+    "bottomTab": {
+        "home": "家",
+        "deposit": "订金",
+        "loans": "贷款",
+        "account": "帐户",
+        "tapBack": "再次点击以退出应用程序"
+    },
+    "homeScreen": {
+        "totalBalance": "总余额",
+        "savingAccount": "储蓄账户",
+        "services": "服务",
+        "account": "帐户",
+        "fundTransfer": "资金转账",
+        "statement": "陈述",
+        "billPay": "账单支付",
+        "scan": "扫描和付款",
+        "more": "更多的",
+        "transaction": "最新交易",
+        "seeAll": "查看全部"
+    },
+    "servicesScreen": {
+        "services": "服务",
+        "account": "帐户",
+        "fundTransfer": "资金转账",
+        "statement": "陈述",
+        "billPay": "账单支付",
+        "scan": "扫描和付款",
+        "deposit": "订金",
+        "loans": "贷款",
+        "cards": "牌",
+        "mutualFund": "共同基金",
+        "insurance": "保险",
+        "shopOffer": "商店和优惠",
+        "recharge": "充电"
+    },
+    "latestTransactionScreen": {
+        "transaction": "交易"
+    },
+    "notificationScreen": {
+        "notification": "通知",
+        "remove": "删除了通知。",
+        "noNotification": "没有新的通知"
+    },
+    "fundTransferScreen": {
+        "fundTransfer": "资金转账",
+        "beneficiaryPay": "受益人工资",
+        "payment": "伊班付款",
+        "pay": "小鬼付费",
+        "transferNow": "现在转移"
+    },
+    "beneficiaryPayScreen": {
+        "fromAccount": "从帐户",
+        "beneficiaryInfo": "受益人信息",
+        "name": "受益人名称",
+        "bankName": "受益银行名称",
+        "accountNumber": "受益人帐号",
+        "amount": "数量",
+        "transferLimit": "转移限制",
+        "savingAccount": "储蓄账户",
+        "currentAccount": "经常帐户",
+        "salaryAccount": "工资帐户",
+        "nriAccount": "NRI帐户"
+    },
+    "paymentIBANScreen": {
+        "fromAccount": "从帐户",
+        "beneficiaryInfo": "受益人信息",
+        "number": "IBAN号码",
+        "name": "受益人名称",
+        "code": "BIC代码",
+        "bank": "收款银行",
+        "amount": "数量",
+        "remark": "评论",
+        "savingAccount": "储蓄账户",
+        "currentAccount": "经常帐户",
+        "salaryAccount": "工资帐户",
+        "nriAccount": "NRI帐户"
+    },
+    "payIMPSScreen": {
+        "fromAccount": "从帐户",
+        "accountNo": "输入帐户号",
+        "holderName": "账户持有人姓名",
+        "enterHolderName": "输入帐户持有人名称",
+        "toAccount": "要考虑",
+        "enterAccountNo": "输入帐户号",
+        "bankName": "银行名",
+        "hBank": "HDFC银行",
+        "iCode": "IFSC代码",
+        "enterICode": "输入IFSC代码",
+        "amount": "数量",
+        "enterAmount": "输入金额",
+        "savingAccount": "储蓄账户",
+        "currentAccount": "经常帐户",
+        "salaryAccount": "工资帐户",
+        "nriAccount": "NRI帐户"
+    },
+    "successfullyScreen": {
+        "successfully": "成功转移",
+        "transferred": "转移到",
+        "from": "从",
+        "remark": "评论",
+        "amount": "数量",
+        "paymentMode": "付款方式",
+        "backToHome": "回到家"
+    },
+    "accountDetailScreen": {
+        "account": "帐户",
+        "totalBalance": "总余额",
+        "accountNumber": "帐号",
+        "accountDetail": "帐户详细资料",
+        "cif": "cif",
+        "ifsc": "ifsc",
+        "branchCode": "分行代码",
+        "branchName": "分店名称",
+        "openingDate": "帐户开放日期",
+        "mmid": "mamid",
+        "currentAccount": "经常帐户",
+        "saving": "储蓄账户",
+        "salaryAccount": "工资帐户",
+        "nRIAccount": "NRI帐户",
+        "viewStateMent": "查看语句"
+    },
+    "statementScreen": {
+        "statement": "陈述",
+        "totalBalance": "总余额",
+        "selectDate": "选择日期",
+        "go": "去",
+        "transaction": "交易结果",
+        "currentAccount": "经常帐户",
+        "savingAccount": "储蓄账户",
+        "salaryAccount": "工资帐户",
+        "nriAccount": "NRI帐户",
+        "cancel": "取消",
+        "ok": "好的"
+    },
+    "depositScreen": {
+        "deposit": "订金",
+        "currentDeposit": "当前存款",
+        "depositTo": "存入：",
+        "status": "地位：",
+        "rate": "速度：",
+        "pending": "待办的",
+        "completedDeposit": "完成的存款",
+        "completed": "完全的"
+    },
+    "addDepositScreen": {
+        "addDeposit": "添加存款",
+        "depositPeriod": "选择存款期",
+        "amount": "数量",
+        "enterDeposit": "输入存款金额",
+        "yourRate": "您的费率为8％",
+        "depositTo": "存入",
+        "selectAmount": "选择帐户",
+        "uploadImage": "上传检查图像",
+        "frontSideImage": "上传检查前侧图像",
+        "backSideImage": "上传检查背面图像",
+        "depositNow": "现在存入",
+        "savingAccount": "储蓄账户",
+        "currentAccount": "经常帐户",
+        "salaryAccount": "工资帐户",
+        "nriAccount": "NRI帐户"
+    },
+    "successDepositModal": {
+        "success": "成功",
+        "congratulation": "祝贺您成功存入18个月的$ 1000",
+        "okay": "好的"
+    },
+    "loansScreen": {
+        "loans": "贷款",
+        "makeEducation": "使教育成为您的首要任务",
+        "lowestInterest": "最低利率",
+        "theRightChoiceCar": "为您的汽车提供资金的正确选择",
+        "dreamCar": "买你的梦想车",
+        "applyNow": "现在申请",
+        "currentLoans": "当前贷款",
+        "period": "时期",
+        "rate": "速度",
+        "eMI": "emi",
+        "viewStatement": "查看语句",
+        "homeLoan": "房屋贷款",
+        "carLoan": "汽车贷款"
+    },
+    "loansStatementScreen": {
+        "statement": "陈述",
+        "period": "时期",
+        "rate": "速度",
+        "eMI": "emi",
+        "recentTransaction": "最近的交易"
+    },
+    "educationLoanScreen": {
+        "educationLoan": "教育贷款",
+        "makeEducation": "使教育成为您的首要任务",
+        "description": "Lorem Ipsum Dolor Sit Amet，Consettur。doxposueretellus ZA周末最新的制造层Ipsuodignissim nulla元素临床。Magna投资Xmorbiuf颤抖卡通。现在，饥饿巧克力和Faucibuxattis Sad地区。但是超级质量池sagittntegelem。但是每个人始终都是调查proidiasollicitudinvulputate。",
+        "phoneNumber": "电话号码",
+        "enterNumber": "输入你的电话号码",
+        "message": "信息",
+        "writeMessage": "写你的消息",
+        "interested": "我有兴趣"
+    },
+    "educationLoanModal": {
+        "educationLoan": "教育贷款",
+        "thankYou": "感谢您提供感兴趣的教育贷款，我们将尽快联系",
+        "okay": "好的"
+    },
+    "accountScreen": {
+        "account": "帐户",
+        "nearbyBank": "附近的银行",
+        "nearbyATMs": "附近的自动柜员机",
+        "changePin": "更改针",
+        "language": "语言",
+        "PrivacyPolicy": "隐私政策",
+        "termsCondition": "条款与协议",
+        "customerSupport": "客户支持",
+        "logout": "登出"
+    },
+    "editProfileScreen": {
+        "editProfile": "编辑个人资料",
+        "name": "姓名",
+        "enterName": "输入你的名字",
+        "email": "电子邮件地址",
+        "enterEmail": "输入你的电子邮箱地址",
+        "mobile": "电话号码",
+        "enterMobile": "输入你的电话号码",
+        "update": "更新",
+        "changeProfile": "上传图片",
+        "camera": "相机",
+        "gallery": "画廊",
+        "remove": "消除",
+        "removeImage": "删除了个人资料照片。",
+        "ok": "好的",
+        "deny": "您否认访问相机！！！"
+
+    },
+    "nearByScreen": {
+        "direction": "方向",
+        "youAreHere": "你在这里",
+        "nearbyBank": "附近的银行"
+    },
+    "changePinScreen": {
+        "changePin": "更改针",
+        "currentPin": "当前销",
+        "enterCurrentPin": "输入当前销",
+        "newPin": "新别针",
+        "enterNewPin": "输入新的别针",
+        "confirmPin": "确认PIN",
+        "confirmNewPin": "确认您的新别针",
+        "reset": "重置"
+    },
+    "languageScreen": {
+        "language": "语言",
+        "update": "更新"
+    },
+    "termsConditionScreen": {
+        "termsAndCondition": "附带条约",
+        "mainDescription": "Lorem Ipsum Dolor Sit Amet，Consettur。doxposueretellus ZA周末最新的制造层Ipsuodignissim nulla元素临床。Magna投资Xmorbiuf颤抖卡通。现在，饥饿巧克力和Faucibuxattis Sad地区。但是超级质量池sagittntegelem。但是，每个人始终是一项调查proidiasollicorionudinvulputate.lorem consectetur.dolposueretellus。现在足球湖。",
+        "subDescription": "Lorem Ipsum Dolor Sit Amet，Consettur。doxposueretellus ZA周末最新的制造层Ipsuodignissim nulla元素临床。Magna投资Xmorbiuf颤抖卡通。现在，饥饿巧克力和Faucibuxattis Sad地区。但是超级质量池sagittntegelem。但是每个人始终都是调查proidiasollicitudinvulputate。"
+    },
+    "privacyPolicyScreen": {
+        "privacyPolicy": "隐私政策",
+        "mainDescription": "Lorem Ipsum Dolor Sit Amet，Consettur。doxposueretellus ZA周末最新的制造层Ipsuodignissim nulla元素临床。Magna投资Xmorbiuf颤抖卡通。现在，饥饿巧克力和Faucibuxattis Sad地区。但是超级质量池sagittntegelem。但是，每个人始终是一项调查proidiasollicorionudinvulputate.lorem consectetur.dolposueretellus。现在足球湖。",
+        "subDescription": "Lorem Ipsum Dolor Sit Amet，Consettur。doxposueretellus ZA周末最新的制造层Ipsuodignissim nulla元素临床。Magna投资Xmorbiuf颤抖卡通。现在，饥饿巧克力和Faucibuxattis Sad地区。但是超级质量池sagittntegelem。但是每个人始终都是调查proidiasollicitudinvulputate。"
+    },
+    "customerSupportScreen": {
+        "customerSupport": "客户支持",
+        "weAreHere": "我们在这里提供帮助，所以请与我们联系。",
+        "name": "姓名",
+        "enterName": "输入你的名字",
+        "email": "电子邮件地址",
+        "enterEmail": "输入你的电子邮箱地址",
+        "message": "信息",
+        "enterMessage": "输入消息",
+        "submit": "提交"
+    },
+    "logoutModal": {
+        "logout": "登出",
+        "areYouSure": "您想注销吗？",
+        "cancel": "取消",
+        "yes": "是的"
+    }
+}

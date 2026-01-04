@@ -1,0 +1,317 @@
+{
+    "onboardingScreen": {
+        "title1": "Opérations bancaires sûres et rapides",
+        "title2": "Gérez votre argent intelligemment",
+        "title3": "Trouvez une banque et un guichet automatique autour de vous",
+        "description": "Lorem ipsum dolor sit amet consectetur. Viverra impretium elementum morbi. Quis id placerat tempor element Aliquet sit consequat quis tellus. ",
+        "skip": "Passer",
+        "tapBack": "Appuyez à nouveau pour quitter l'application"
+    },
+    "loginScreen": {
+        "login": "Connexion",
+        "welcomeBack": "Bon retour",
+        "happy": "Nous sommes heureux de vous revoir",
+        "mobileNumber": "Entrez votre numéro de mobile",
+        "search": "Rechercher",
+        "close": "Fermer",
+        "tapBack": "Appuyez à nouveau pour quitter l'application"
+    },
+    "registerScreen": {
+        "register": "S'inscrire",
+        "name": "Entrez votre nom",
+        "number": "Entrez votre numéro de mobile",
+        "email": "Entrez votre adresse email"
+    },
+    "otpScreen": {
+        "verification": "Vérification OTP",
+        "pleaseEnter": "L'OTP vous a été envoyé sur votre numéro de mobile, veuillez l'entrer ci-dessous",
+        "verify": "Vérifier",
+        "resend": "Renvoyer"
+    },
+    "pinScreen": {
+        "enterPin": "Entrez le code PIN",
+        "welcome": "Bienvenue",
+        "enterDigit": "Leslie Alexander entrez le code PIN à 4 chiffres",
+        "continue": "Continuer"
+    },
+    "loader": {
+        "pleaseWait": "Veuillez patienter"
+    },
+    "bottomTab": {
+        "home": "Accueil",
+        "deposit": "Dépôt",
+        "loans": "Prêts",
+        "account": "Compte",
+        "tapBack": "Appuyez à nouveau pour quitter l'application"
+    },
+    "homeScreen": {
+        "totalBalance": "Solde total",
+        "savingAccount": "Compte épargne",
+        "services": "Services",
+        "account": "Compte",
+        "fundTransfer": "Transfert de fonds",
+        "statement": "Relevé",
+        "billPay": "Paiement de factures",
+        "scan": "Scanner et payer",
+        "more": "Plus",
+        "transaction": "Dernière transaction",
+        "seeAll": "Voir tout"
+    },
+    "servicesScreen": {
+        "services": "Services",
+        "account": "Compte",
+        "fundTransfer": "Transfert de fonds",
+        "statement": "Relevé",
+        "billPay": "Paiement de factures",
+        "scan": "Scanner et payer",
+        "deposit": "Dépôt",
+        "loans": "Prêts",
+        "cards": "Cartes",
+        "mutualFund": "Fonds commun de placement",
+        "insurance": "Assurance",
+        "shopOffer": "Boutique et offres",
+        "recharge": "Recharger"
+    },
+    "latestTransactionScreen": {
+        "transaction": "Transaction"
+    },
+    "notificationScreen": {
+        "notification": "Notification",
+        "remove": "Notification supprimée.",
+        "noNotification": "Pas de nouvelle notification"
+    },
+    "fundTransferScreen": {
+        "fundTransfer": "Transfert de fonds",
+        "beneficiaryPay": "Paiement bénéficiaire",
+        "payment": "Paiement IBAN",
+        "pay": "Paiement IMPS",
+        "transferNow": "Transférer maintenant"
+    },
+    "beneficiaryPayScreen": {
+        "fromAccount": "Du compte",
+        "beneficiaryInfo": "Infos bénéficiaire",
+        "name": "Nom du bénéficiaire",
+        "bankName": "Nom de la banque bénéficiaire",
+        "accountNumber": "Numéro de compte bénéficiaire",
+        "amount": "Montant",
+        "transferLimit": "Limite de transfert",
+        "savingAccount": "Compte épargne",
+        "currentAccount": "Compte courant",
+        "salaryAccount": "Compte salaire",
+        "nriAccount": "Compte NRI"
+    },
+    "paymentIBANScreen": {
+        "fromAccount": "Du compte",
+        "beneficiaryInfo": "Infos bénéficiaire",
+        "number": "Numéro IBAN",
+        "name": "Nom du bénéficiaire",
+        "code": "Code BIC",
+        "bank": "Banque bénéficiaire",
+        "amount": "Montant",
+        "remark": "Remarque",
+        "savingAccount": "Compte épargne",
+        "currentAccount": "Compte courant",
+        "salaryAccount": "Compte salaire",
+        "nriAccount": "Compte NRI"
+    },
+    "payIMPSScreen": {
+        "fromAccount": "Du compte",
+        "accountNo": "Entrez le n° de compte",
+        "holderName": "Nom du titulaire",
+        "enterHolderName": "Entrez le nom du titulaire",
+        "toAccount": "Vers le compte",
+        "enterAccountNo": "Entrez le n° de compte",
+        "bankName": "Nom de la banque",
+        "hBank": "Banque HDFC",
+        "iCode": "Code IFSC",
+        "enterICode": "Entrez le code IFSC",
+        "amount": "Montant",
+        "enterAmount": "Entrez le montant",
+        "savingAccount": "Compte épargne",
+        "currentAccount": "Compte courant",
+        "salaryAccount": "Compte salaire",
+        "nriAccount": "Compte NRI"
+    },
+    "successfullyScreen": {
+        "successfully": "Transfert réussi",
+        "transferred": "Transféré à",
+        "from": "De",
+        "remark": "Remarque",
+        "amount": "Montant",
+        "paymentMode": "Mode de paiement",
+        "backToHome": "Retour à l'accueil"
+    },
+    "accountDetailScreen": {
+        "account": "Compte",
+        "totalBalance": "Solde total",
+        "accountNumber": "Numéro de compte",
+        "accountDetail": "Détails du compte",
+        "cif": "CIF",
+        "ifsc": "IFSC",
+        "branchCode": "Code agence",
+        "branchName": "Nom de l'agence",
+        "openingDate": "Date d'ouverture",
+        "mmid": "MMId",
+        "currentAccount": "Compte courant",
+        "saving": "Compte épargne",
+        "salaryAccount": "Compte salaire",
+        "nRIAccount": "Compte NRI",
+        "viewStateMent": "Voir le relevé"
+    },
+    "statementScreen": {
+        "statement": "Relevé",
+        "totalBalance": "Solde total",
+        "selectDate": "Sélectionner une date",
+        "go": "Aller",
+        "transaction": "Résultat de transaction",
+        "currentAccount": "Compte courant",
+        "savingAccount": "Compte épargne",
+        "salaryAccount": "Compte salaire",
+        "nriAccount": "Compte NRI",
+        "cancel": "Annuler",
+        "ok": "ok"
+    },
+    "depositScreen": {
+        "deposit": "Dépôt",
+        "currentDeposit": "Dépôt actuel",
+        "depositTo": "Dépôt vers :",
+        "status": "Statut :",
+        "rate": "Taux :",
+        "pending": "En attente",
+        "completedDeposit": "Dépôt terminé",
+        "completed": "Terminé"
+    },
+    "addDepositScreen": {
+        "addDeposit": "Ajouter un dépôt",
+        "depositPeriod": "Choisir la période de dépôt",
+        "amount": "Montant",
+        "enterDeposit": "Entrez le montant du dépôt",
+        "yourRate": "Votre taux est de 8%",
+        "depositTo": "Dépôt vers",
+        "selectAmount": "Sélectionner le compte",
+        "uploadImage": "Télécharger l'image du chèque",
+        "frontSideImage": "Télécharger l'image recto du chèque",
+        "backSideImage": "Télécharger l'image verso du chèque",
+        "depositNow": "Déposer maintenant",
+        "savingAccount": "Compte épargne",
+        "currentAccount": "Compte courant",
+        "salaryAccount": "Compte salaire",
+        "nriAccount": "Compte NRI"
+    },
+    "successDepositModal": {
+        "success": "Succès",
+        "congratulation": "Félicitations, vos 1000 $ ont été déposés avec succès pour 18 mois",
+        "okay": "D'accord"
+    },
+    "loansScreen": {
+        "loans": "Prêts",
+        "makeEducation": "Faites de l'éducation votre priorité",
+        "lowestInterest": "Taux d'intérêt le plus bas",
+        "theRightChoiceCar": "Le bon choix pour financer votre voiture",
+        "dreamCar": "Achetez la voiture de vos rêves",
+        "applyNow": "Postuler maintenant",
+        "currentLoans": "Prêts actuels",
+        "period": "Période",
+        "rate": "Taux",
+        "eMI": "EMI",
+        "viewStatement": "Voir le relevé",
+        "homeLoan": "Prêt immobilier",
+        "carLoan": "Prêt auto"
+    },
+    "loansStatementScreen": {
+        "statement": "relevé",
+        "period": "Période",
+        "rate": "Taux",
+        "eMI": "EMI",
+        "recentTransaction": "Transaction récente"
+    },
+    "educationLoanScreen": {
+        "educationLoan": "Prêt étudiant",
+        "makeEducation": "Faites de l'éducation votre priorité",
+        "description": "Lorem ipsum dolor sit amet consectetur. Doxposueretellus za volutpat aliquam vestibulum accumsan ipsuodignissim nulla elementum orci a dictumst. Magna placerat xmorbiuf pharetra viverra. Nunc fames scelerisque ac faucibuxmattis tristique tellus. Sed ultricies massa lacus sagittntegelorem. At quisque semper sit aliquet proidiasollicitudinvulputate. ",
+        "phoneNumber": "Numéro de téléphone",
+        "enterNumber": "Entrez votre numéro de téléphone",
+        "message": "Message",
+        "writeMessage": "Écrivez votre message",
+        "interested": "Je suis intéressé"
+    },
+    "educationLoanModal": {
+        "educationLoan": "Prêt étudiant",
+        "thankYou": "Merci de votre intérêt pour le prêt étudiant, nous vous contacterons bientôt",
+        "okay": "D'accord"
+    },
+    "accountScreen": {
+        "account": "Compte",
+        "nearbyBank": "Banque à proximité",
+        "nearbyATMs": "DAB à proximité",
+        "changePin": "Changer le code PIN",
+        "language": "Langue",
+        "PrivacyPolicy": "Politique de confidentialité",
+        "termsCondition": "Termes et conditions",
+        "customerSupport": "Support client",
+        "logout": "Déconnexion"
+    },
+    "editProfileScreen": {
+        "editProfile": "Modifier le profil",
+        "name": "Nom",
+        "enterName": "Entrez votre nom",
+        "email": "Adresse email",
+        "enterEmail": "Entrez votre adresse email",
+        "mobile": "Numéro de téléphone",
+        "enterMobile": "Entrez votre numéro de téléphone",
+        "update": "Mettre à jour",
+        "changeProfile": "Télécharger une image",
+        "camera": "Caméra",
+        "gallery": "Galerie",
+        "remove": "Supprimer",
+        "removeImage": "Photo de profil supprimée.",
+        "ok": "Ok",
+        "deny": "Vous avez refusé l'accès à la caméra !!!"
+    },
+    "nearByScreen": {
+        "direction": "Direction",
+        "youAreHere": "Vous êtes ici",
+        "nearbyBank": "Banque à proximité"
+    },
+    "changePinScreen": {
+        "changePin": "Changer le code PIN",
+        "currentPin": "Code PIN actuel",
+        "enterCurrentPin": "Entrez le code PIN actuel",
+        "newPin": "Nouveau code PIN",
+        "enterNewPin": "Entrez le nouveau code PIN",
+        "confirmPin": "Confirmer le code PIN",
+        "confirmNewPin": "Confirmez votre nouveau code PIN",
+        "reset": "Réinitialiser"
+    },
+    "languageScreen": {
+        "language": "Langue",
+        "update": "Mettre à jour"
+    },
+    "termsConditionScreen": {
+        "termsAndCondition": "Termes et conditions",
+        "mainDescription": "Lorem ipsum dolor sit amet consectetur. Doxposueretellus za volutpat aliquam vestibulum accumsan ipsuodignissim nulla elementum orci a dictumst. Magna placerat xmorbiuf pharetra viverra. Nunc fames scelerisque ac faucibuxmattis tristique tellus. Sed ultricies massa lacus sagittntegelorem. At quisque semper sit aliquet proidiasollicitudinvulputate.Lorem ipsum dolor sit amet consectetur.Dolposueretellus a volutpat aliquam vestibulum accumsan ipsuTodignissim nulla elementum orci a dictumst.Magna placerat vmorbiuf pharetra viverra.Nunc fames scelerisque ac faucibuszattis tristique tellus.Sed ultricies massa lacus sagitintegelorem.At quisque semper sit aliquet proidiasollicitudinvulputate.Tellus elementum ut ut morbi nunc lacus et.",
+        "subDescription": "Lorem ipsum dolor sit amet consectetur. Doxposueretellus za volutpat aliquam vestibulum accumsan ipsuodignissim nulla elementum orci a dictumst. Magna placerat xmorbiuf pharetra viverra. Nunc fames scelerisque ac faucibuxmattis tristique tellus. Sed ultricies massa lacus sagittntegelorem. At quisque semper sit aliquet proidiasollicitudinvulputate. "
+    },
+    "privacyPolicyScreen": {
+        "privacyPolicy": "Politique de confidentialité",
+        "mainDescription": "Lorem ipsum dolor sit amet consectetur. Doxposueretellus za volutpat aliquam vestibulum accumsan ipsuodignissim nulla elementum orci a dictumst. Magna placerat xmorbiuf pharetra viverra. Nunc fames scelerisque ac faucibuxmattis tristique tellus. Sed ultricies massa lacus sagittntegelorem. At quisque semper sit aliquet proidiasollicitudinvulputate.Lorem ipsum dolor sit amet consectetur.Dolposueretellus a volutpat aliquam vestibulum accumsan ipsuTodignissim nulla elementum orci a dictumst.Magna placerat vmorbiuf pharetra viverra.Nunc fames scelerisque ac faucibuszattis tristique tellus.Sed ultricies massa lacus sagitintegelorem.At quisque semper sit aliquet proidiasollicitudinvulputate.Tellus elementum ut ut morbi nunc lacus et.",
+        "subDescription": "Lorem ipsum dolor sit amet consectetur. Doxposueretellus za volutpat aliquam vestibulum accumsan ipsuodignissim nulla elementum orci a dictumst. Magna placerat xmorbiuf pharetra viverra. Nunc fames scelerisque ac faucibuxmattis tristique tellus. Sed ultricies massa lacus sagittntegelorem. At quisque semper sit aliquet proidiasollicitudinvulputate. "
+    },
+    "customerSupportScreen": {
+        "customerSupport": "Support client",
+        "weAreHere": "Nous sommes là pour vous aider, n'hésitez pas à nous contacter.",
+        "name": "Nom",
+        "enterName": "Entrez votre nom",
+        "email": "Adresse email",
+        "enterEmail": "Entrez votre adresse email",
+        "message": "Message",
+        "enterMessage": "Entrez le message",
+        "submit": "Envoyer"
+    },
+    "logoutModal": {
+        "logout": "Déconnexion",
+        "areYouSure": "Êtes-vous sûr de vouloir vous déconnecter ?",
+        "cancel": "Annuler",
+        "yes": "Oui"
+    }
+}
