@@ -125,9 +125,9 @@ const HomeScreen = () => {
     if (index === 0) {
       router.push('/(tabs)/account/account-detail');
     } else if (index === 1) {
-      // router.push('/fundTransfer/fundTransferScreen');
+      router.push('/fund-transfer');
     } else if (index === 2) {
-      // router.push('/statement/statementScreen');
+      router.push('/statement');
     } else if (index === 5) {
       router.push('/services');
     }
