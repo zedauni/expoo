@@ -14,11 +14,13 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Loader from '@/components/loader';
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
+import { useAppLock } from '@/lib/app-lock';
 
 const ChangePinScreen = () => {
   const router = useRouter();
   const { t, i18n } = useTranslation();
   const insets = useSafeAreaInsets();
+  const setPin = useAppLock.use.setPin();
   const isRtl = i18n.dir() === 'rtl';
 
   function tr(key: string) {
@@ -32,11 +34,17 @@ const ChangePinScreen = () => {
   const [resetLoaderModal, setResetLoaderModal] = useState<boolean>(false);
 
   const handleReset = () => {
-    setResetLoaderModal(true);
-    setTimeout(() => {
-      setResetLoaderModal(false);
-      router.back();
-    }, 800);
+    if (newPin && newPin === confirmPin) {
+      setResetLoaderModal(true);
+      setTimeout(() => {
+        setPin(newPin);
+        setResetLoaderModal(false);
+        router.back();
+      }, 800);
+    } else {
+      // In a real app we would show an error message
+      console.warn('PINs do not match or empty');
+    }
   };
 
   return (

@@ -20,6 +20,7 @@ import Loader from '@/components/loader';
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
 import images from '@/constants/images';
+import { useAppLock } from '@/lib/app-lock';
 
 const { width, height } = Dimensions.get('window');
 
@@ -27,20 +28,31 @@ const PinScreen = () => {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
+  const setPin = useAppLock.use.setPin();
+  const storedPin = useAppLock.use.pin();
 
+  const [enteredPin, setEnteredPin] = useState('');
   const [continueLoaderVisible, setContinueLoaderVisible] = useState(false);
 
   const handleContinue = () => {
     setContinueLoaderVisible(true);
     setTimeout(() => {
+      // If no PIN is stored, we treat this as the first-time setup for the demo
+      if (!storedPin) {
+        setPin(enteredPin);
+      }
       setContinueLoaderVisible(false);
-      router.push('/(tabs)');
+      router.push('/(tabs)/home');
     }, 1500);
   };
 
   const handleTextChange = (otp: string) => {
+    setEnteredPin(otp);
     if (otp.length === 4) {
-      handleContinue();
+      // Small delay to allow the last digit to be visible
+      setTimeout(() => {
+        handleContinue();
+      }, 100);
     }
   };
 

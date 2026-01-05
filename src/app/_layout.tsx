@@ -14,6 +14,7 @@ import { KeyboardProvider } from 'react-native-keyboard-controller';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { APIProvider } from '@/api';
+import { AppLockWrapper } from '@/components/app-lock-wrapper';
 import { hydrateAuth, loadSelectedTheme } from '@/lib';
 import { useThemeConfig } from '@/lib/use-theme-config';
 
@@ -75,7 +76,7 @@ function Providers({ children }: { children: React.ReactNode }) {
           <ThemeProvider value={theme}>
             <APIProvider>
               <BottomSheetModalProvider>
-                {children}
+                <AppLockWrapper>{children}</AppLockWrapper>
                 <FlashMessage position="top" />
               </BottomSheetModalProvider>
             </APIProvider>
