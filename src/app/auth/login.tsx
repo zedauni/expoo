@@ -67,7 +67,7 @@ const LoginScreen = () => {
     setLoginLoaderVisible(true);
     setTimeout(() => {
       setLoginLoaderVisible(false);
-      router.replace('/(tabs)/home');
+      router.push('/auth/register');
     }, 800);
   };
 

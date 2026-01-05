@@ -4,7 +4,7 @@ import '../../global.css';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import { ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
+import { Stack, useRouter, useSegments } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import React from 'react';
 import { StyleSheet } from 'react-native';
@@ -16,6 +16,8 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { APIProvider } from '@/api';
 import { AppLockWrapper } from '@/components/app-lock-wrapper';
 import { hydrateAuth, loadSelectedTheme } from '@/lib';
+import { useAppLock } from '@/lib/app-lock';
+import { useAuth } from '@/lib/auth';
 import { useThemeConfig } from '@/lib/use-theme-config';
 
 export { ErrorBoundary } from 'expo-router';
@@ -55,12 +57,43 @@ export default function RootLayout() {
 
   return (
     <Providers>
-      <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="onboarding" />
-        <Stack.Screen name="auth/login" />
-        <Stack.Screen name="(tabs)" />
-      </Stack>
+      <RootNavigator />
     </Providers>
+  );
+}
+
+function RootNavigator() {
+  const { status } = useAuth();
+  const hasCompletedOnboarding = useAppLock.use.hasCompletedOnboarding();
+  const router = useRouter();
+  const segments = useSegments();
+
+  React.useEffect(() => {
+    const inAuthGroup = segments[0] === 'auth';
+    const isOnboarding = segments[0] === 'onboarding';
+
+    if (!hasCompletedOnboarding && !isOnboarding && !inAuthGroup) {
+      // If not onboarded and not on onboarding/auth pages, redirect to onboarding
+      router.replace('/onboarding');
+    } else if (
+      hasCompletedOnboarding &&
+      status === 'signIn' &&
+      (isOnboarding || inAuthGroup)
+    ) {
+      // If onboarded and signed in, but on onboarding/auth pages, redirect to home
+      router.replace('/(tabs)/home');
+    }
+  }, [status, hasCompletedOnboarding, segments, router]);
+
+  return (
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="onboarding" />
+      <Stack.Screen name="auth/login" />
+      <Stack.Screen name="auth/register" />
+      <Stack.Screen name="auth/otp" />
+      <Stack.Screen name="auth/pin" />
+      <Stack.Screen name="(tabs)" />
+    </Stack>
   );
 }
 

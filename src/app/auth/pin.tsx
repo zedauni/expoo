@@ -29,6 +29,7 @@ const PinScreen = () => {
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
   const setPin = useAppLock.use.setPin();
+  const setHasCompletedOnboarding = useAppLock.use.setHasCompletedOnboarding();
   const storedPin = useAppLock.use.pin();
 
   const [enteredPin, setEnteredPin] = useState('');
@@ -41,6 +42,7 @@ const PinScreen = () => {
       if (!storedPin) {
         setPin(enteredPin);
       }
+      setHasCompletedOnboarding(true);
       setContinueLoaderVisible(false);
       router.push('/(tabs)/home');
     }, 1500);

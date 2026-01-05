@@ -10,11 +10,13 @@ interface AppLockState {
   isLocked: boolean;
   isAppLockEnabled: boolean;
   lockTimeout: number; // in milliseconds
+  hasCompletedOnboarding: boolean;
   setPin: (pin: string | null) => void;
   setLastBackgroundTime: (time: number | null) => void;
   setLocked: (isLocked: boolean) => void;
   setAppLockEnabled: (enabled: boolean) => void;
   setLockTimeout: (timeout: number) => void;
+  setHasCompletedOnboarding: (completed: boolean) => void;
 }
 
 const _useAppLock = create<AppLockState>()(
@@ -25,12 +27,15 @@ const _useAppLock = create<AppLockState>()(
       isLocked: false,
       isAppLockEnabled: true,
       lockTimeout: 30000, // Default 30 seconds
+      hasCompletedOnboarding: false,
       setPin: (pin) => set({ pin }),
       setLastBackgroundTime: (lastBackgroundTime) =>
         set({ lastBackgroundTime }),
       setLocked: (isLocked) => set({ isLocked }),
       setAppLockEnabled: (isAppLockEnabled) => set({ isAppLockEnabled }),
       setLockTimeout: (lockTimeout) => set({ lockTimeout }),
+      setHasCompletedOnboarding: (hasCompletedOnboarding) =>
+        set({ hasCompletedOnboarding }),
     }),
     {
       name: 'app-lock-storage',
@@ -43,6 +48,7 @@ const _useAppLock = create<AppLockState>()(
         pin: state.pin,
         isAppLockEnabled: state.isAppLockEnabled,
         lockTimeout: state.lockTimeout,
+        hasCompletedOnboarding: state.hasCompletedOnboarding,
       }),
     }
   )
