@@ -65,10 +65,13 @@ export default function RootLayout() {
 function RootNavigator() {
   const { status } = useAuth();
   const hasCompletedOnboarding = useAppLock.use.hasCompletedOnboarding();
+  const hasHydrated = useAppLock((state) => (state as any)._hasHydrated); // We'll add this to the store
   const router = useRouter();
   const segments = useSegments();
 
   React.useEffect(() => {
+    if (!hasHydrated) return;
+
     const inAuthGroup = segments[0] === 'auth';
     const isOnboarding = segments[0] === 'onboarding';
 
@@ -83,7 +86,7 @@ function RootNavigator() {
       // If onboarded and signed in, but on onboarding/auth pages, redirect to home
       router.replace('/(tabs)/home');
     }
-  }, [status, hasCompletedOnboarding, segments, router]);
+  }, [status, hasCompletedOnboarding, hasHydrated, segments, router]);
 
   return (
     <Stack screenOptions={{ headerShown: false }}>

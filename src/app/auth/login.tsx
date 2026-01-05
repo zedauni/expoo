@@ -22,6 +22,7 @@ import Loader from '@/components/loader';
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
 import images from '@/constants/images';
+import { useAppLock } from '@/lib/app-lock';
 
 const { width, height } = Dimensions.get('window');
 
@@ -31,6 +32,8 @@ const LoginScreen = () => {
   const { t } = useTranslation();
   const [exitApp, setExitApp] = useState(0);
   const [loginLoaderVisible, setLoginLoaderVisible] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const setUserProfile = useAppLock.use.setUserProfile();
 
   useFocusEffect(
     useCallback(() => {
@@ -64,6 +67,7 @@ const LoginScreen = () => {
   );
 
   const handleLoginBtn = () => {
+    setUserProfile({ phone: phoneNumber });
     setLoginLoaderVisible(true);
     setTimeout(() => {
       setLoginLoaderVisible(false);
@@ -143,6 +147,9 @@ const LoginScreen = () => {
                 }}
                 inputProps={{
                   selectionColor: colors.primary,
+                }}
+                onChangeText={({ phoneNumber }: { phoneNumber: string }) => {
+                  setPhoneNumber(phoneNumber);
                 }}
                 modalCountryItemCountryNameStyle={{
                   fontFamily: 'NunitoSans_SemiBold', // Use raw family name if possible, or omit

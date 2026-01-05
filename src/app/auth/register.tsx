@@ -20,6 +20,7 @@ import Loader from '@/components/loader';
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
 import images from '@/constants/images';
+import { useAppLock } from '@/lib/app-lock';
 
 const { width, height } = Dimensions.get('window');
 
@@ -27,6 +28,7 @@ const RegisterScreen = () => {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
+  const setUserProfile = useAppLock.use.setUserProfile();
 
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
@@ -35,6 +37,7 @@ const RegisterScreen = () => {
   const [registerLoaderVisible, setRegisterLoaderVisible] = useState(false);
 
   const handleRegister = () => {
+    setUserProfile({ name, email, phone: number });
     setRegisterLoaderVisible(true);
     setTimeout(() => {
       setRegisterLoaderVisible(false);

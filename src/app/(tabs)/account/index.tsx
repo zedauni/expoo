@@ -23,6 +23,7 @@ import LogoutModal from '@/components/logout-modal';
 import MyStatusBar from '@/components/my-status-bar';
 import colors from '@/components/ui/colors';
 import images from '@/constants/images';
+import { useAppLock } from '@/lib/app-lock';
 
 const { width } = Dimensions.get('window');
 
@@ -32,6 +33,8 @@ const AccountScreen = () => {
   const { t } = useTranslation();
 
   const [logoutModalVisible, setLogoutModalVisible] = useState(false);
+  const userName = useAppLock.use.userName();
+  const userPhone = useAppLock.use.userPhone();
 
   interface MenuItemProps {
     onPress: () => void;
@@ -88,13 +91,13 @@ const AccountScreen = () => {
               numberOfLines={1}
               className="font-nunito text-base font-bold text-black"
             >
-              Leslie Alexander
+              {userName || ''}
             </Text>
             <Text
               numberOfLines={1}
               className="text-grey mt-0.5 font-nunito text-sm font-semibold"
             >
-              +91 1234567890
+              {userPhone || ''}
             </Text>
           </View>
           <TouchableOpacity onPress={() => router.push('/edit-profile')}>
