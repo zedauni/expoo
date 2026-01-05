@@ -65,6 +65,11 @@
         "APP_ENV": "development",
         "EXPO_NO_DOTENV": "1"
       }
+    },
+    "standalone": {
+      "android": {
+        "buildType": "apk"
+      }
     }
   },
   "submit": {

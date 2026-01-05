@@ -35,12 +35,12 @@ require('dotenv').config({
 
 // TODO: Replace these values with your own
 
-const BUNDLE_ID = 'com.expoo'; // ios bundle id
-const PACKAGE = 'com.expoo'; // android package name
-const NAME = 'ExpoO'; // app name
-const EXPO_ACCOUNT_OWNER = 'expo-owner'; // expo account owner
-const EAS_PROJECT_ID = 'c3e1075b-6fe7-4686-aa49-35b46a229044'; // eas project id
-const SCHEME = 'ExpoO'; // app scheme
+const BUNDLE_ID = 'app.fipay.services.card'; // ios bundle id
+const PACKAGE = 'app.fipay.services.card'; // android package name
+const NAME = 'Fipay'; // app name
+const EXPO_ACCOUNT_OWNER = 'zedaunice'; // expo account owner
+const EAS_PROJECT_ID = 'db47a716-a734-49be-92c4-ce5bc9a29598'; // eas project id
+const SCHEME = 'fipay'; // app scheme
 
 /**
  * We declare a function withEnvSuffix that will add a suffix to the variable name based on the APP_ENV

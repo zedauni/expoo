@@ -22,10 +22,10 @@ const appIconBadgeConfig: AppIconBadgeConfig = {
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: Env.NAME,
-  description: `${Env.NAME} Mobile App`,
+  description: `${Env.NAME}, votre argent, votre pouvoir.`,
   owner: Env.EXPO_ACCOUNT_OWNER,
   scheme: Env.SCHEME,
-  slug: 'obytesapp',
+  slug: 'fipay',
   version: Env.VERSION.toString(),
   orientation: 'portrait',
   icon: './assets/icon.png',
@@ -33,6 +33,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   newArchEnabled: true,
   updates: {
     fallbackToCacheTimeout: 0,
+    url: 'https://u.expo.dev/db47a716-a734-49be-92c4-ce5bc9a29598',
   },
   assetBundlePatterns: ['**/*'],
   ios: {
@@ -40,6 +41,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     bundleIdentifier: Env.BUNDLE_ID,
     infoPlist: {
       ITSAppUsesNonExemptEncryption: false,
+    },
+    runtimeVersion: {
+      policy: 'appVersion',
     },
   },
   experiments: {
@@ -51,6 +55,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       backgroundColor: '#2E3C4B',
     },
     package: Env.PACKAGE,
+    runtimeVersion: '1.0.0',
   },
   web: {
     favicon: './assets/favicon.png',
@@ -68,7 +73,13 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     [
       'expo-font',
       {
-        fonts: ['./assets/fonts/Inter.ttf'],
+        fonts: [
+          './assets/fonts/Inter.ttf',
+          './assets/fonts/NunitoSans-Bold.ttf',
+          './assets/fonts/NunitoSans-ExtraBold.ttf',
+          './assets/fonts/NunitoSans-Regular.ttf',
+          './assets/fonts/NunitoSans-SemiBold.ttf',
+        ],
       },
     ],
     'expo-localization',
